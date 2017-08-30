@@ -24,11 +24,11 @@ class SolutionController extends Controller
     public function create()
     {
         //$diseases = Disease::pluck('name', 'id');
-        $steps = Step::pluck('number', 'id')->toArray();
-        $solutions = Solution::orderBy('id', 'desc')->with('solu_diseas', 'step')->paginate(10);
+//        $steps = Step::pluck('number', 'id')->toArray();
+        $solutions = Solution::orderBy('id', 'desc')->with('solu_diseas')->paginate(10);
 
         return view('admin.solution.index')
-            ->with('steps', $steps)
+//            ->with('steps', $steps)
             ->with('solutions', $solutions);
           //  ->with('diseases', $diseases);
     }

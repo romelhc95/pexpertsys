@@ -84,8 +84,8 @@ class ReportController extends Controller
 
             $result[] = [
                 'month'  => $value,
-                'first'  => $aux[0],
-                'second' => $aux[1],
+                'first'  => $aux[$keyDisease],
+                'second' => $aux[$keyDisease],
             ];
         }
 

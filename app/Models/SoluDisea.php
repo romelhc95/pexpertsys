@@ -17,4 +17,8 @@ class SoluDisea extends Model
     {
         return $this->belongsTo(Solution::class, 'solution_id');
     }
+
+    public function step(){
+        return $this->belongsTo(Step::class);
+    }
 }

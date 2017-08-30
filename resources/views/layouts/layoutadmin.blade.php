@@ -7,7 +7,7 @@
         {{-- Tell the browser to be responsive to screen width --}}
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         {{-- Compiled scripts --}}
-        <!--link rel="stylesheet" href="{ elixir('css/all.css') }}"-->
+        {{--<link rel="stylesheet" href="{{ elixir('css/all.css') }}">--}}
         {{ Html::style('css/all.css') }}
         {{ Html::style('css/font-awesome.css') }}
 
@@ -171,9 +171,9 @@
             </footer>
         </div>{{-- ./wrapper --}}
         {{-- Compiled scripts --}}
-        <!--script src="{ elixir('js/all.js') }}"></script>
-        <script src="{ asset('build/js/morris.min.js') }}"></script>
-        <script src="{ asset('build/js/graphs.js') }}"></script-->
+        {{--<script src="{{ elixir('js/all.js') }}"></script>--}}
+        {{--<script src="{{ asset('build/js/morris.min.js') }}"></script>--}}
+        {{--<script src="{{ asset('build/js/graphs.js') }}"></script>--}}
 
         {{ Html::script('js/all.js') }}
         {{ Html::script('build/js/morris.min.js') }}

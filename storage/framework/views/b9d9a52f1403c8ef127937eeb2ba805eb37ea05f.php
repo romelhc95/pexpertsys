@@ -7,7 +7,7 @@
         
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         
-        <!--link rel="stylesheet" href="{ elixir('css/all.css') }}"-->
+        
         <?php echo e(Html::style('css/all.css')); ?>
 
         <?php echo e(Html::style('css/font-awesome.css')); ?>
@@ -179,9 +179,9 @@
             </footer>
         </div>
         
-        <!--script src="{ elixir('js/all.js') }}"></script>
-        <script src="{ asset('build/js/morris.min.js') }}"></script>
-        <script src="{ asset('build/js/graphs.js') }}"></script-->
+        
+        
+        
 
         <?php echo e(Html::script('js/all.js')); ?>
 

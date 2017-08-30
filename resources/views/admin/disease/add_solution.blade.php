@@ -31,6 +31,7 @@
                             <tr>
                                 <th><i class="fa fa-gear"></i></th>
                                 <th>ID Solución</th>
+                                <th>Paso</th>
                                 <th>Solución</th>
                             </tr>
                         </thead>
@@ -45,10 +46,25 @@
                                 </td>
                                 <td>Solución {{ $index }}</td>
                                 <td>
+                                    @foreach($soludisea as $soludiseastep)
+                                    <dl>
+                                        <dd>
+                                            {{ $soludiseastep->steps_id }}<b>.-</b>
+                                        </dd>
+                                    </dl>
+                                    @endforeach
+                                </td>
+                                <td>
                                     @foreach ($soludisea as $soludiseasolution)
-                                        <span class="label label-primary">
-                                                {{ $soludiseasolution->solution->description }}
-                                            </span>&nbsp;
+                                        {{--<span class="label label-primary">--}}
+                                                {{--{{ $soludiseasolution->solution->description }}--}}
+                                        {{--</span>&nbsp;--}}
+                                       <dl>
+                                           <dd>
+                                               {{ $soludiseasolution->solution->description }}
+                                           </dd>
+                                       </dl>
+
                                     @endforeach
                                 </td>
                             </tr>

@@ -34,6 +34,7 @@
                             <tr>
                                 <th><i class="fa fa-gear"></i></th>
                                 <th>ID Solución</th>
+                                <th>Paso</th>
                                 <th>Solución</th>
                             </tr>
                         </thead>
@@ -48,11 +49,26 @@
                                 </td>
                                 <td>Solución <?php echo e($index); ?></td>
                                 <td>
+                                    <?php $__currentLoopData = $soludisea; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $soludiseastep): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                                    <dl>
+                                        <dd>
+                                            <?php echo e($soludiseastep->steps_id); ?><b>.-</b>
+                                        </dd>
+                                    </dl>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                                </td>
+                                <td>
                                     <?php $__currentLoopData = $soludisea; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $soludiseasolution): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
-                                        <span class="label label-primary">
-                                                <?php echo e($soludiseasolution->solution->description); ?>
+                                        
+                                                
+                                        
+                                       <dl>
+                                           <dd>
+                                               <?php echo e($soludiseasolution->solution->description); ?>
 
-                                            </span>&nbsp;
+                                           </dd>
+                                       </dl>
+
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
                                 </td>
                             </tr>

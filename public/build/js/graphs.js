@@ -11,7 +11,7 @@ $(function(){
                 ykeys: ['first', 'second'],
                 labels: data.names
             });
-        }); 
+        });
     };
 
     if ($('#firstdonut').length) {

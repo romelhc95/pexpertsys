@@ -10,6 +10,7 @@ use Tesis\Http\Requests\SearchRequest;
 use Tesis\Models\Disease;
 use Tesis\Models\Rule;
 use Tesis\Models\Solution;
+use Tesis\Models\Step;
 use Tesis\Models\Symptom;
 use Tesis\Models\SoluDisea;
 use Tesis\Traits\HashTrait;
@@ -24,7 +25,7 @@ class DiseaseController extends Controller
      */
     public function create()
     {
-        $types   = Type::pluck('description', 'id')->toArray();
+        $types  = Type::pluck('description', 'id')->toArray();
         $enfermedades = Disease::with('rules', 'diagnostics', 'solu_diseas', 'type')->orderBy('name', 'asc')->paginate(10);
 
         return view('admin.disease.index')
@@ -224,9 +225,11 @@ class DiseaseController extends Controller
     public function add_solution($hash_id, Request $request)
     {
         $enfermedad = Disease::findOrFail($this->decode($hash_id));
+        $steps = Step::pluck('number', 'id')->toArray();
         $solutions = DB::table('solutions')->orderBy('description', 'asc')->pluck('description', 'id')->toArray();
         $soludiseas = SoluDisea::with('solution')
             ->where('disease_id', $enfermedad->id)
+            ->orderBy('steps_id', 'asc')
             ->get()
             ->groupBy('number');
 
@@ -263,6 +266,7 @@ class DiseaseController extends Controller
         return view('admin.disease.add_solution')
             ->with('enfermedad', $enfermedad)
             ->with('solutions', $solutions)
+            ->with('steps', $steps)
             ->with('soludiseas', $soludiseas);
     }
 

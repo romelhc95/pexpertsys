@@ -10,13 +10,13 @@
             </div>
             <div class="box-body">
                 {!! Form::open() !!}
-                    <!--h>{!! Field::select('steps_id', $step, !empty($solution) ? $solution->steps_id : old('steps_id'), [
-                        'ph' => trans('messages.label.solution.passed'),
-                        'label' => trans('messages.label.passed'),
-                        'empty' => false,
-                        'class' => 'select2',
-                        'data-width' => '100%'
-                    ]) !!}</h-->
+                    {{--{!! Field::select('steps_id', $step, !empty($solution) ? $solution->steps_id : old('steps_id'), [--}}
+                        {{--'ph' => trans('messages.label.solution.passed'),--}}
+                        {{--'label' => trans('messages.label.passed'),--}}
+                        {{--'empty' => false,--}}
+                        {{--'class' => 'select2',--}}
+                        {{--'data-width' => '100%'--}}
+                    {{--]) !!}--}}
                     {!! Field::text('description', !empty($solution) ? $solution->description : old('description'), [
                         'autocomplete' => 'off',
                         'label' => trans('messages.label.description')

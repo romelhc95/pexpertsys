@@ -6,7 +6,9 @@ use DB;
 use Illuminate\Http\Request;
 use Tesis\Http\Controllers\Controller;
 use Tesis\Models\Diagnostic;
+use Tesis\Models\Disease;
 use Tesis\Models\Rule;
+use Tesis\Models\SoluDisea;
 use Tesis\Models\Symptom;
 use Tesis\Traits\HashTrait;
 
@@ -148,6 +150,16 @@ class DiagnosticController extends Controller
             ->with('sintomas', $symptomsForSelect);
     }
 
+//    public function showSolution($hash_id){
+//        $enfermedad = Disease::findOrFail($this->decode($hash_id));
+//        $soluciones = SoluDisea::with('solution')
+//            ->where('disease_id', $enfermedad->id)
+//            ->orderBy('steps_id', 'asc')
+//            ->get()
+//            ->groupBy('number');
+//        return view('user.diagnostic.show')->with('soluciones', $soluciones);
+//    }
+
     private function generateDiagnostic($diseaseKey, $userId)
     {
         $diagnostic             = new Diagnostic();
@@ -186,6 +198,12 @@ class DiagnosticController extends Controller
 
     public function show($hashed = null)
     {
+        $disease = Disease::findOrFail($this->decode($hashed));
+        $solutions = SoluDisea::with('solution', 'step')
+            ->where('disease_id', $disease->id)
+            ->orderBy('steps_id', 'asc')
+            ->get()
+            ->groupBy('number');
         if (is_null($hashed)) {
             return view('user.diagnostic.show');
         }
@@ -198,7 +216,9 @@ class DiagnosticController extends Controller
             return redirect()->back();
         }
 
-        return view('user.diagnostic.show')->with('diagnostico', $diagnostico);
+        return view('user.diagnostic.show')
+            ->with('solutions', $solutions)
+            ->with('diagnostico', $diagnostico);
     }
     /*
 $enfermedades = Disease::whereSymptoms($request->sintomas)->get();

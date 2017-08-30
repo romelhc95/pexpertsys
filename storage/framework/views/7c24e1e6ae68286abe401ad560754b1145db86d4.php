@@ -2,8 +2,8 @@
 <?php $__env->startSection('title'); ?> <?php echo e(trans('messages.label.home')); ?> <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="small-box bg-green">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="small-box bg-teal">
                 <div class="inner">
                     <h3><?php echo e($countDiagnostic); ?></h3>
                     <p><?php echo e(trans('messages.label.diagnostics')); ?></p>
@@ -30,7 +30,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="small-box bg-yellow">
                 <div class="inner">
                     <h3><?php echo e($countSymptom); ?></h3>
@@ -54,6 +54,20 @@
                     <i class="fa fa-stethoscope"></i>
                 </div>
                 <a href="<?php echo e(route('admin::soluciones::create')); ?>" class="small-box-footer">
+                    <?php echo e(trans('messages.label.more_info')); ?> <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3><?php echo e($countPlant); ?></h3>
+                    <p><?php echo e(trans('messages.label.plants')); ?></p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-tree"></i>
+                </div>
+                <a href="<?php echo e(route('admin::plantas::create')); ?>" class="small-box-footer">
                     <?php echo e(trans('messages.label.more_info')); ?> <i class="fa fa-arrow-circle-right"></i>
                 </a>
             </div>

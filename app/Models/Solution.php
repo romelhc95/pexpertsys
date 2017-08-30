@@ -17,7 +17,7 @@ class Solution extends Model
 {
     use SearchableTrait, SoftDeletes;
 
-    protected $fillable = ['steps_id', 'description', 'deleted_at'];
+    protected $fillable = ['description', 'deleted_at'];
 
     protected $searchable = [
         'columns' => [
@@ -29,9 +29,6 @@ class Solution extends Model
         return $this->belongsToMany('Tesis\Models\Disease', 'solu_diseas')->withTimestamps();
     }
 
-    public function step(){
-        return $this->belongsTo(Step::class);
-    }
 //    public function diseases()
 //    {
 //        return $this->belongsToMany('Tesis\Models\Disease', 'diseases')->withTimestamps();

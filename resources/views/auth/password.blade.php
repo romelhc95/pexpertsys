@@ -44,6 +44,6 @@
         </div>{{-- /.login-box --}}
 
         {{-- Compiled scripts --}}
-        <script src="{{ elixir('js/all.js') }}"></script>
+        <script src="{{ elixir('js/all-5d56b1e1bd.js') }}"></script>
     </body>
 </html>

@@ -51,7 +51,7 @@
                                         'object' => $solution,
                                         'editRoute' => 'admin::soluciones::edit',
                                         'deleteRoute' => 'admin::soluciones::delete',
-                                        'name' => $solution->passed,
+                                        'name' => $solution->description,
                                         'content' => 'La solución',
                                     ])
                                 </td>

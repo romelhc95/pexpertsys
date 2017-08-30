@@ -9,6 +9,7 @@ use Tesis\Http\Requests\PasswordRequest;
 use Tesis\Http\Requests\ProfileRequest;
 use Tesis\Models\Diagnostic;
 use Tesis\Models\Disease;
+use Tesis\Models\Plant;
 use Tesis\Models\Solution;
 use Tesis\Models\State;
 use Tesis\Models\Symptom;
@@ -16,12 +17,16 @@ use Tesis\Models\User;
 
 class HomeController extends Controller
 {
+    /**
+     * @return $this
+     */
     public function home()
     {
         $countDiseases   = Disease::count();
         $countSymptom    = Symptom::count();
         $countDiagnostic = Diagnostic::count();
         $countSolution = Solution::count();
+        $countPlant = Plant::count();
         $lastRegistered  = User::orderBy('created_at', 'desc')->take(9)->get();
 
         return view('admin.home')
@@ -29,6 +34,7 @@ class HomeController extends Controller
             ->with('countSymptom', $countSymptom)
             ->with('countDiseases', $countDiseases)
             ->with('countSolution', $countSolution)
+            ->with('countPlant', $countPlant)
             ->with('lastRegistered', $lastRegistered);
     }
 

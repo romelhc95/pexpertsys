@@ -3,8 +3,8 @@
 @section('title') {{ trans('messages.label.home') }} @stop
 @section('content')
     <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="small-box bg-green">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="small-box bg-teal">
                 <div class="inner">
                     <h3>{{ $countDiagnostic }}</h3>
                     <p>{{ trans('messages.label.diagnostics') }}</p>
@@ -31,7 +31,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="small-box bg-yellow">
                 <div class="inner">
                     <h3>{{ $countSymptom }}</h3>
@@ -55,6 +55,20 @@
                     <i class="fa fa-stethoscope"></i>
                 </div>
                 <a href="{{ route('admin::soluciones::create') }}" class="small-box-footer">
+                    {{ trans('messages.label.more_info') }} <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>{{ $countPlant }}</h3>
+                    <p>{{ trans('messages.label.plants') }}</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-tree"></i>
+                </div>
+                <a href="{{ route('admin::plantas::create') }}" class="small-box-footer">
                     {{ trans('messages.label.more_info') }} <i class="fa fa-arrow-circle-right"></i>
                 </a>
             </div>
