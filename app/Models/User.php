@@ -15,7 +15,9 @@ class User extends Authenticatable
 
     protected $table = 'users';
 
-    protected $fillable = ['email', 'name', 'lastname', 'gender', 'birthday', 'phone', 'mobil'];
+    protected $fillable = [
+        'email', 'name', 'lastname', 'password', 'gender', 'birthday', 'phone', 'mobil'
+    ];
 
     protected $guarded = ['password'];
 
@@ -74,5 +76,46 @@ class User extends Authenticatable
     public function setBirthdayAttribute($birthday)
     {
         $this->attributes['birthday'] = Carbon::createFromFormat('d/m/Y', $birthday)->format('Y-m-d');
+    }
+
+    /**
+     * @param $roles
+     * @return bool
+     */
+    public function authorizeRole($roles)
+    {
+        if($this->hasAnyRole($roles)){
+            return true;
+        }
+        abort(401, 'Esta acción no esta autorizada.');
+    }
+
+    /**
+     * @param $roles
+     * @return bool
+     */
+    public function hasAnyRole($roles)
+    {
+        if(is_array($roles)){
+            foreach ($roles as $role){
+                if($this->hasRole($role)){
+                    return true;
+                }
+            }
+        }
+        else{
+            if($this->hasRole($roles)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public function hasRole($role)
+    {
+        if ($this->roles()->where('name', $role)->first()){
+            return true;
+        }
+        return false;
     }
 }

@@ -9,6 +9,7 @@ use Tesis\Models\Diagnostic;
 use Tesis\Models\Disease;
 use Tesis\Models\Rule;
 use Tesis\Models\SoluDisea;
+use Tesis\Models\Step;
 use Tesis\Models\Symptom;
 use Tesis\Traits\HashTrait;
 
@@ -150,16 +151,6 @@ class DiagnosticController extends Controller
             ->with('sintomas', $symptomsForSelect);
     }
 
-//    public function showSolution($hash_id){
-//        $enfermedad = Disease::findOrFail($this->decode($hash_id));
-//        $soluciones = SoluDisea::with('solution')
-//            ->where('disease_id', $enfermedad->id)
-//            ->orderBy('steps_id', 'asc')
-//            ->get()
-//            ->groupBy('number');
-//        return view('user.diagnostic.show')->with('soluciones', $soluciones);
-//    }
-
     private function generateDiagnostic($diseaseKey, $userId)
     {
         $diagnostic             = new Diagnostic();
@@ -196,14 +187,47 @@ class DiagnosticController extends Controller
         return redirect()->back();
     }
 
+    /**
+     * @param null $hashed
+     * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     */
+
+//    public function show($hashed=null)
+//    {
+//        if (is_null($hashed)) {
+//            return view('user.diagnostic.show');
+//        }
+//
+//        $id = $this->decode($hashed);
+////        $ids = '2';
+////        $enfermedad = Disease::findOrFail($this->encode($hashed));
+//        $diagnostico = Diagnostic::findOrFail($id);
+////        $steps = Step::pluck('number', 'id')->toArray();
+////        $solutions = DB::table('solutions')->orderBy('description', 'asc')->pluck('description', 'id')->toArray();
+//        $soludiseas = SoluDisea::with('solution')
+//            ->where('disease_id', $diagnostico->id)
+////            ->orderBy('steps_id', 'asc')
+//            ->get()
+//            ->groupBy('number');
+//
+//        if ($diagnostico->user_id != auth()->id()) {
+//            return redirect()->back();
+//        }
+//
+//        return view('user.diagnostic.show')
+////            ->with('enfermedad', $enfermedad)
+////            ->with('solutions', $solutions)
+////            ->with('steps', $steps)
+//            ->with('soludiseas', $soludiseas)
+//            ->with('diagnostico', $diagnostico);
+//    }
+
+    /**
+     * @param null $hashed
+     * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     */
     public function show($hashed = null)
     {
-        $disease = Disease::findOrFail($this->decode($hashed));
-        $solutions = SoluDisea::with('solution', 'step')
-            ->where('disease_id', $disease->id)
-            ->orderBy('steps_id', 'asc')
-            ->get()
-            ->groupBy('number');
         if (is_null($hashed)) {
             return view('user.diagnostic.show');
         }
@@ -211,6 +235,10 @@ class DiagnosticController extends Controller
         $id = $this->decode($hashed);
 
         $diagnostico = Diagnostic::findOrFail($id);
+        $solutions = SoluDisea::with('solution')
+            ->where('disease_id', $diagnostico->disease_id)
+            ->get()
+            ->groupBy('number');
 
         if ($diagnostico->user_id != auth()->id()) {
             return redirect()->back();

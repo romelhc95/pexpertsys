@@ -59,11 +59,11 @@ class SolutionController extends Controller
     {
         $id = $this->decode($hash_id);
 
-        $step = Step::pluck('number', 'id')->toArray();
+//        $step = Step::pluck('number', 'id')->toArray();
         $solution = Solution::findOrFail($id);
 
         return view('admin.solution.edit')
-            ->with(('step'), $step)
+//            ->with(('step'), $step)
             ->with('solution', $solution);
     }
 

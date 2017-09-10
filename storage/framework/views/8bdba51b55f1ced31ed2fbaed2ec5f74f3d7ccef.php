@@ -5,7 +5,7 @@
     <div class="col-md-12">
         <div class="box box-success box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title"><strong>Nueva Solución</strong>
+                <h3 class="box-title"><strong>Nueva Solución</strong></h3>
             </div>
             <div class="box-body">
                 <?php echo Form::open(); ?>
@@ -25,7 +25,7 @@
     <div class="col-md-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title"><strong>Solución de la <?php echo e($enfermedad->name); ?></strong></h3>
+                <h3 class="box-title"><strong>Solución de la <?php echo e($disease->name); ?></strong></h3>
             </div>
             <div class="box-body">
                 <div class="table-responsive">
@@ -49,13 +49,15 @@
                                 </td>
                                 <td>Solución <?php echo e($index); ?></td>
                                 <td>
-                                    <?php $__currentLoopData = $soludisea; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $soludiseastep): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+                                    
                                     <dl>
                                         <dd>
-                                            <?php echo e($soludiseastep->steps_id); ?><b>.-</b>
+                                            <?php for($i=1; $i<=count($soludisea, COUNT_RECURSIVE); $i++): ?>
+                                                <ol><h4>Paso <?php echo e($i); ?>.</h4></ol>
+                                            <?php endfor; ?>
                                         </dd>
                                     </dl>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+                                    
                                 </td>
                                 <td>
                                     <?php $__currentLoopData = $soludisea; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $soludiseasolution): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>

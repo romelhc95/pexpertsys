@@ -9,7 +9,9 @@
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         
-        <link rel="stylesheet" href="<?php echo e(elixir('css/all.css')); ?>">
+        
+        <?php echo e(Html::style('css/all.css')); ?>
+
 
         
         
@@ -36,6 +38,8 @@
         </div><!-- /.content-wrapper -->
 
         
-        <script src="<?php echo e(elixir('js/all-5d56b1e1bd.js')); ?>"></script>
+        <script src="<?php echo e(elixir('js/all.js')); ?>"></script>
+        <?php echo e(Html::script('js/all.js')); ?>
+
     </body>
 </html>

@@ -168,6 +168,7 @@ class DiseaseController extends Controller
      * Delete the rule by the number and the rules with a greather number
      * decrease in one their number attribute
      * @param integer $ruleNumber
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function delete_rule($ruleNumber)
     {
@@ -224,17 +225,14 @@ class DiseaseController extends Controller
      */
     public function add_solution($hash_id, Request $request)
     {
-        $enfermedad = Disease::findOrFail($this->decode($hash_id));
-        $steps = Step::pluck('number', 'id')->toArray();
-        $solutions = DB::table('solutions')->orderBy('description', 'asc')->pluck('description', 'id')->toArray();
+        $disease = Disease::findOrFail($this->decode($hash_id));
+        $solutions = DB::table('solutions')->pluck('description', 'id')->toArray();
         $soludiseas = SoluDisea::with('solution')
-            ->where('disease_id', $enfermedad->id)
-            ->orderBy('steps_id', 'asc')
+            ->where('disease_id', $disease->id)
             ->get()
             ->groupBy('number');
 
         if ($request->isMethod('post')) {
-
             $this->validate($request, ['solutions' => 'required']);
 
             if ($this->checkIfSoluDiseaExists($request->solutions)) {
@@ -254,7 +252,7 @@ class DiseaseController extends Controller
             foreach ($soluciones as $solucion) {
                 $soludisea         = new SoluDisea;
                 $soludisea->number = $numberSoludisea;
-                $soludisea->disease()->associate($enfermedad);
+                $soludisea->disease()->associate($disease);
                 $soludisea->solution()->associate($solucion);
                 $soludisea->save();
             }
@@ -264,10 +262,9 @@ class DiseaseController extends Controller
         }
 
         return view('admin.disease.add_solution')
-            ->with('enfermedad', $enfermedad)
-            ->with('solutions', $solutions)
-            ->with('steps', $steps)
-            ->with('soludiseas', $soludiseas);
+            ->with('disease', $disease)
+            ->with('soludiseas', $soludiseas)
+            ->with('solutions', $solutions);
     }
 
     public function delete_solution($soludiseaNumber)
@@ -280,13 +277,23 @@ class DiseaseController extends Controller
         return redirect()->back();
     }
 
+    /**
+     * @param $solutionsArray
+     * @return bool
+     */
     private function checkIfSoluDiseaExists($solutionsArray)
     {
-        $soludiseas = SoluDisea::with('Solution')->whereIn('solution_id', $solutionsArray)->get()->groupBy('number');
+        $soludiseas = SoluDisea::with('solution')
+            ->whereIn('solution_id', $solutionsArray)
+            ->get()
+            ->groupBy('number');
 
         list($soludiseasKeys) = array_divide($soludiseas->toArray());
 
-        $soludiseas = SoluDisea::with('Solution')->whereIn('number', $soludiseasKeys)->get()->groupBy('number');
+        $soludiseas = SoluDisea::with('solution')
+            ->whereIn('number', $soludiseasKeys)
+            ->get()
+            ->groupBy('number');
 
         $soludiseas = $soludiseas->map(function ($solutions, $key) {
             return $solutions->groupBy('solution_id');

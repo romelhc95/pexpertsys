@@ -151,4 +151,4 @@ Route::get('/logoutadmin', ['as' => 'logoutSessionAdmin', 'uses' => 'Auth\LoginC
 // Password reset routes...
 //Route::get('password/reset/{token}', 'Auth\PasswordController@Route::getReset');
 //Route::post('password/reset', 'Auth\PasswordController@Route::postReset');
-
+?>

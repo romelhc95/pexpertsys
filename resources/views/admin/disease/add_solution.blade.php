@@ -6,7 +6,7 @@
     <div class="col-md-12">
         <div class="box box-success box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title"><strong>Nueva Solución</strong>
+                <h3 class="box-title"><strong>Nueva Solución</strong></h3>
             </div>
             <div class="box-body">
                 {!! Form::open() !!}
@@ -22,7 +22,7 @@
     <div class="col-md-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title"><strong>Solución de la {{ $enfermedad->name }}</strong></h3>
+                <h3 class="box-title"><strong>Solución de la {{ $disease->name }}</strong></h3>
             </div>
             <div class="box-body">
                 <div class="table-responsive">
@@ -46,13 +46,15 @@
                                 </td>
                                 <td>Solución {{ $index }}</td>
                                 <td>
-                                    @foreach($soludisea as $soludiseastep)
+                                    {{--@foreach($soludisea as $soludiseastep)--}}
                                     <dl>
                                         <dd>
-                                            {{ $soludiseastep->steps_id }}<b>.-</b>
+                                            @for($i=1; $i<=count($soludisea, COUNT_RECURSIVE); $i++)
+                                                <ol><h4>Paso {{ $i }}.</h4></ol>
+                                            @endfor
                                         </dd>
                                     </dl>
-                                    @endforeach
+                                    {{--@endforeach--}}
                                 </td>
                                 <td>
                                     @foreach ($soludisea as $soludiseasolution)

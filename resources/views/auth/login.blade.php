@@ -28,34 +28,44 @@
             </div>{{-- /.login-logo --}}
             <div class="login-box-body">
                 <p class="login-box-msg">{{ trans('messages.login.welcome') }}</p>
-                <!--h>{!-- Form::open(['url' => '/login']) --!}</h-->
-                <form method="POST" action="login">
-                <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-                {!! Alert::render() !!}
-                <div class="form-group has-feedback {!! $errors->first('email', 'has-error') !!}">
-                    <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="{{ trans('messages.form.email') }}">
-                    <span class="fa fa-envelope form-control-feedback"></span>
-                    {!! $errors->first('email', '<p class="text-danger">:message</p>') !!}
-                </div>
-                <div class="form-group has-feedback {!! $errors->first('password', 'has-error') !!}">
-                    <input type="password" class="form-control" name="password" placeholder="{{ trans('messages.form.password') }}">
-                    <span class="fa fa-lock form-control-feedback"></span>
-                    {!! $errors->first('password', '<p class="text-danger">:message</p>') !!}
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="checkbox recordar">
-                            <input type="checkbox" name="remember" data-labelauty="{{ trans('messages.login.remember') }}"/>
-                        </div>
-                    </div>{{-- /.col --}}
-                    <div class="col-md-6">
-                        {!! Form::submit(trans('messages.login.login'), ['class' => 'btn btn-primary btn-block btn-flat']) !!}
-                    </div>{{-- /.col --}}
-                </div>
+                {{--<form method="POST" action="{{ route('login') }}">--}}
+                {{--<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />--}}
+                {!! Form::open(['route'=>'login', 'method'=>'POST']) !!}
+                    {{ csrf_field() }}
+                {{--{!! Alert::render() !!}--}}
+                    <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">
+                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="{{ trans('messages.form.email') }}" required autofocus>
+                        <span class="fa fa-envelope form-control-feedback"></span>
+                        {{--{!! $errors->first('email', '<p class="text-danger">:message</p>') !!}--}}
+                        @if ($errors->has('email'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                    <div class="form-group has-feedback {{ $errors->has('password') ? ' has-error' : '' }}">
+                        <input id="password" type="password" class="form-control" name="password" placeholder="{{ trans('messages.form.password') }}" required>
+                        <span class="fa fa-lock form-control-feedback"></span>
+                        {{--{!! $errors->first('password', '<p class="text-danger">:message</p>') !!}--}}
+                        @if ($errors->has('password'))
+                            <span class="help-block">
+                                            <strong>{{ $errors->first('password') }}</strong>
+                                        </span>
+                        @endif
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="checkbox recordar">
+                                <input type="checkbox" name="remember" data-labelauty="{{ trans('messages.login.remember') }}" {{ old('remember') ? 'checked' : '' }}/>
+                            </div>
+                        </div>{{-- /.col --}}
+                        <div class="col-md-6">
+                            {!! Form::submit(trans('messages.login.login'), ['class' => 'btn btn-primary btn-block btn-flat']) !!}
+                        </div>{{-- /.col --}}
+                    </div>
+                    <a href="{{ url('/password/reset') }}">{{ trans('messages.login.forgot') }}</a><br>
+                    <a href="{{ url('/register') }}" class="text-center">{{ trans('messages.login.register') }}</a>
                 {!! Form::close() !!}
-
-                <a href="/password/email">{{ trans('messages.login.forgot') }}</a><br>
-                <a href="{{ url('/register') }}" class="text-center">{{ trans('messages.login.register') }}</a>
             </div>{{-- /.login-box-body --}}
         </div>{{-- /.login-box --}}
 

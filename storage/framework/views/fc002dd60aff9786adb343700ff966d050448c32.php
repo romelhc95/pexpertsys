@@ -55,7 +55,7 @@
                                         'object' => $solution,
                                         'editRoute' => 'admin::soluciones::edit',
                                         'deleteRoute' => 'admin::soluciones::delete',
-                                        'name' => $solution->passed,
+                                        'name' => $solution->description,
                                         'content' => 'La solución',
                                     ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                                 </td>

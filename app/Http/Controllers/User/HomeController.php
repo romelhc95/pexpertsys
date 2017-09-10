@@ -3,6 +3,7 @@
 namespace Tesis\Http\Controllers\User;
 
 use DB;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Tesis\Http\Controllers\Controller;
 use Tesis\Http\Requests\PasswordRequest;
@@ -16,8 +17,18 @@ use Tesis\Models\User;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function __constructor()
     {
+        $this->middleware('auth');
+    }
+
+    /**
+     * @param Request $request
+     * @return mixed
+     */
+    public function index(Request $request)
+    {
+        $request->user()->authorizeRole(['Agricultor', 'Administrador']);
         $countDiagnostic = count(auth()->user()->diagnostics);
         $countDiseases   = Disease::count();
         $countSymptom    = Symptom::count();
@@ -76,5 +87,14 @@ class HomeController extends Controller
 
         alert('Se cambió la contraseña con éxito');
         return redirect()->back();
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function someUserStuff(Request $request){
+        $request->user()->authorizeRoles('Agricultor');
+        return view('user.home');
     }
 }

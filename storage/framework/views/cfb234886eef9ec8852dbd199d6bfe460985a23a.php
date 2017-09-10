@@ -32,39 +32,48 @@
             </div>
             <div class="login-box-body">
                 <p class="login-box-msg"><?php echo e(trans('messages.login.welcome')); ?></p>
-                <!--h>{!-- Form::open(['url' => '/login']) --!}</h-->
-                <form method="POST" action="login">
-                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>" />
-                <?php echo Alert::render(); ?>
+                
+                
+                <?php echo Form::open(['route'=>'login', 'method'=>'POST']); ?>
 
-                <div class="form-group has-feedback <?php echo $errors->first('email', 'has-error'); ?>">
-                    <input type="email" class="form-control" name="email" value="<?php echo e(old('email')); ?>" placeholder="<?php echo e(trans('messages.form.email')); ?>">
-                    <span class="fa fa-envelope form-control-feedback"></span>
-                    <?php echo $errors->first('email', '<p class="text-danger">:message</p>'); ?>
+                    <?php echo e(csrf_field()); ?>
 
-                </div>
-                <div class="form-group has-feedback <?php echo $errors->first('password', 'has-error'); ?>">
-                    <input type="password" class="form-control" name="password" placeholder="<?php echo e(trans('messages.form.password')); ?>">
-                    <span class="fa fa-lock form-control-feedback"></span>
-                    <?php echo $errors->first('password', '<p class="text-danger">:message</p>'); ?>
+                
+                    <div class="form-group has-feedback <?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
+                        <input id="email" type="email" class="form-control" name="email" value="<?php echo e(old('email')); ?>" placeholder="<?php echo e(trans('messages.form.email')); ?>" required autofocus>
+                        <span class="fa fa-envelope form-control-feedback"></span>
+                        
+                        <?php if($errors->has('email')): ?>
+                            <span class="help-block">
+                                <strong><?php echo e($errors->first('email')); ?></strong>
+                            </span>
+                        <?php endif; ?>
+                    </div>
+                    <div class="form-group has-feedback <?php echo e($errors->has('password') ? ' has-error' : ''); ?>">
+                        <input id="password" type="password" class="form-control" name="password" placeholder="<?php echo e(trans('messages.form.password')); ?>" required>
+                        <span class="fa fa-lock form-control-feedback"></span>
+                        
+                        <?php if($errors->has('password')): ?>
+                            <span class="help-block">
+                                            <strong><?php echo e($errors->first('password')); ?></strong>
+                                        </span>
+                        <?php endif; ?>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="checkbox recordar">
+                                <input type="checkbox" name="remember" data-labelauty="<?php echo e(trans('messages.login.remember')); ?>" <?php echo e(old('remember') ? 'checked' : ''); ?>/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <?php echo Form::submit(trans('messages.login.login'), ['class' => 'btn btn-primary btn-block btn-flat']); ?>
 
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="checkbox recordar">
-                            <input type="checkbox" name="remember" data-labelauty="<?php echo e(trans('messages.login.remember')); ?>"/>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <?php echo Form::submit(trans('messages.login.login'), ['class' => 'btn btn-primary btn-block btn-flat']); ?>
-
-                    </div>
-                </div>
+                    <a href="<?php echo e(url('/password/reset')); ?>"><?php echo e(trans('messages.login.forgot')); ?></a><br>
+                    <a href="<?php echo e(url('/register')); ?>" class="text-center"><?php echo e(trans('messages.login.register')); ?></a>
                 <?php echo Form::close(); ?>
 
-
-                <a href="/password/email"><?php echo e(trans('messages.login.forgot')); ?></a><br>
-                <a href="<?php echo e(url('/register')); ?>" class="text-center"><?php echo e(trans('messages.login.register')); ?></a>
             </div>
         </div>
 

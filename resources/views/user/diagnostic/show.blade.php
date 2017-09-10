@@ -17,26 +17,16 @@
                         <p class="text-center"><strong>Descripción:</strong></p>
                         <h3 class="text-center">{{ $diagnostico->disease->description }}</h3>
                         <p class="text-center"><strong>Solución:</strong></p>
-                        <h3>
-                            <table>
-                                <tbody>
+                        <div style="margin: 0 auto;">
+                            <h3>
+                                <table style="margin: 0 auto">
+                                    <tbody>
                                     @foreach ($solutions as $index => $solution)
                                     <tr>
                                         <td>
-                                            @foreach($solution as $detail)
-                                                {{--<dl>--}}
-                                                    {{--<dd>--}}
-                                                        {{--<h4>{{ $step->steps_id }}<b>.-</b></h4>--}}
-                                                    {{--</dd>--}}
-                                                {{--</dl>--}}
-                                                <?php $n = count($detail->solution->number) ?>
-                                                {{--<?php $s = count($n) ?>--}}
-
-                                                    <?php printf($n) ?>
-                                                {{--<?php for($i=0; $i<=$s; $i++){ ?>--}}
-                                                    {{--<h4>{{ $i }}</h4>--}}
-                                                {{--<?php } ?>--}}
-                                            @endforeach
+                                            @for($i=1; $i<=count($solution, COUNT_RECURSIVE); $i++)
+                                                <ol><h4>Paso {{ $i }}.</h4></ol>
+                                            @endfor
                                         </td>
                                         <td>
                                             @foreach ($solution as $detail)
@@ -47,9 +37,10 @@
                                         </td>
                                     </tr>
                                     @endforeach
-                                </tbody>
-                            </table>
-                        </h3>
+                                    </tbody>
+                                </table>
+                            </h3>
+                        </div>
                     @else
                         <h5 class="text-center">Usted no padece ningúna enfermedad</h5>
                         <p class="text-center">El sistema no ha logrado encontar alguna enfermedad con los síntomas ingresados
