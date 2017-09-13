@@ -32,6 +32,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title"><strong>Listado de Usuarios</strong></h3>
             </div>
+            <?php echo $__env->make('flash::message', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             <div class="box-body">
                 <?php echo Form::open(['method' => 'GET', 'route' => 'admin::usuarios::buscar']); ?>
 
@@ -46,7 +47,7 @@
                                 <th>Datos</th>
                                 <th>Correo</th>
                                 <th>Género</th>
-                                <th>Departamento</th>
+                                
                                 <th>Nacimiento</th>
                                 <th>Teléfono</th>
                                 <th>Celular</th>
@@ -69,7 +70,7 @@
                                     <td><?php echo e($usuario->name); ?> <?php echo e($usuario->lastname); ?></td>
                                     <td><?php echo e($usuario->email); ?></td>
                                     <td><?php echo e($usuario->getGender()); ?></td>
-                                    <td><?php echo e(isset($usuario->state->name) ? $usuario->state->name : 'No Registrado'); ?></td>
+                                    
                                     <td><?php echo e(isset($usuario->birthday) ? $usuario->birthday->format('d/m/Y') : '--'); ?></td>
                                     <td><?php echo e($usuario->phone); ?></td>
                                     <td><?php echo e($usuario->mobil); ?></td>

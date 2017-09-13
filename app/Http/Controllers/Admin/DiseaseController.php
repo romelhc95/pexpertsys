@@ -225,14 +225,15 @@ class DiseaseController extends Controller
      */
     public function add_solution($hash_id, Request $request)
     {
-        $disease = Disease::findOrFail($this->decode($hash_id));
-        $solutions = DB::table('solutions')->pluck('description', 'id')->toArray();
+        $enfermedad = Disease::findOrFail($this->decode($hash_id));
+        $solutions = DB::table('solutions')->orderBy('description', 'asc')->pluck('description', 'id')->toArray();
         $soludiseas = SoluDisea::with('solution')
-            ->where('disease_id', $disease->id)
+            ->where('disease_id', $enfermedad->id)
             ->get()
             ->groupBy('number');
 
         if ($request->isMethod('post')) {
+
             $this->validate($request, ['solutions' => 'required']);
 
             if ($this->checkIfSoluDiseaExists($request->solutions)) {
@@ -252,7 +253,7 @@ class DiseaseController extends Controller
             foreach ($soluciones as $solucion) {
                 $soludisea         = new SoluDisea;
                 $soludisea->number = $numberSoludisea;
-                $soludisea->disease()->associate($disease);
+                $soludisea->disease()->associate($enfermedad);
                 $soludisea->solution()->associate($solucion);
                 $soludisea->save();
             }
@@ -262,9 +263,9 @@ class DiseaseController extends Controller
         }
 
         return view('admin.disease.add_solution')
-            ->with('disease', $disease)
-            ->with('soludiseas', $soludiseas)
-            ->with('solutions', $solutions);
+            ->with('enfermedad', $enfermedad)
+            ->with('solutions', $solutions)
+            ->with('soludiseas', $soludiseas);
     }
 
     public function delete_solution($soludiseaNumber)
@@ -277,23 +278,13 @@ class DiseaseController extends Controller
         return redirect()->back();
     }
 
-    /**
-     * @param $solutionsArray
-     * @return bool
-     */
     private function checkIfSoluDiseaExists($solutionsArray)
     {
-        $soludiseas = SoluDisea::with('solution')
-            ->whereIn('solution_id', $solutionsArray)
-            ->get()
-            ->groupBy('number');
+        $soludiseas = SoluDisea::with('Solution')->whereIn('solution_id', $solutionsArray)->get()->groupBy('number');
 
         list($soludiseasKeys) = array_divide($soludiseas->toArray());
 
-        $soludiseas = SoluDisea::with('solution')
-            ->whereIn('number', $soludiseasKeys)
-            ->get()
-            ->groupBy('number');
+        $soludiseas = SoluDisea::with('Solution')->whereIn('number', $soludiseasKeys)->get()->groupBy('number');
 
         $soludiseas = $soludiseas->map(function ($solutions, $key) {
             return $solutions->groupBy('solution_id');

@@ -32,6 +32,7 @@
             </div>
             <div class="login-box-body">
                 <p class="login-box-msg"><?php echo e(trans('messages.login.welcome')); ?></p>
+                <?php echo $__env->make('flash::message', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                 
                 
                 <?php echo Form::open(['route'=>'login', 'method'=>'POST']); ?>
@@ -55,8 +56,8 @@
                         
                         <?php if($errors->has('password')): ?>
                             <span class="help-block">
-                                            <strong><?php echo e($errors->first('password')); ?></strong>
-                                        </span>
+                                <strong><?php echo e($errors->first('password')); ?></strong>
+                            </span>
                         <?php endif; ?>
                     </div>
                     <div class="row">

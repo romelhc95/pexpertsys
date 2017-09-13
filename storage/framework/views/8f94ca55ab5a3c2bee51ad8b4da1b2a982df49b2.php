@@ -4,5 +4,5 @@
     'data-width' => '100%'
 ]); ?>
 
-<?php echo $errors->has('solutions', '<p class="text-danger">:message</p>'); ?>
+<?php echo $errors->first('solutions', '<p class="text-danger">:message</p>'); ?>
 

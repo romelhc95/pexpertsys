@@ -33,6 +33,7 @@
     29 => 'Tesis\\Providers\\AuthServiceProvider',
     30 => 'Tesis\\Providers\\EventServiceProvider',
     31 => 'Tesis\\Providers\\RouteServiceProvider',
+    32 => 'Laracasts\\Flash\\FlashServiceProvider',
   ),
   'eager' => 
   array (
@@ -55,6 +56,7 @@
     16 => 'Tesis\\Providers\\AuthServiceProvider',
     17 => 'Tesis\\Providers\\EventServiceProvider',
     18 => 'Tesis\\Providers\\RouteServiceProvider',
+    19 => 'Laracasts\\Flash\\FlashServiceProvider',
   ),
   'deferred' => 
   array (

@@ -120,6 +120,7 @@ Route::group(['middleware' => 'auth'], function () {
             Route::get('/analizar', 'User\DiagnosticController@analyze');
             Route::post('/analizar', ['as' => 'analyze', 'uses' => 'User\DiagnosticController@analyze']);
             Route::get('/listar', ['as' => 'index', 'uses' => 'User\DiagnosticController@index']);
+            Route::get('/listar/detail/{id}', ['as' => 'detail', 'uses' => 'User\DiagnosticController@detail']);
             Route::get('/mostrar/{id?}', ['as' => 'show', 'uses' => 'User\DiagnosticController@show']);
             Route::get('/eliminar-sintoma/{id}', ['as' => 'delete::symptom', 'uses' => 'User\DiagnosticController@delete_symptom']);
         });

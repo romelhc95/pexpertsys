@@ -14,16 +14,12 @@
     {{-- timeline item --}}
     <li>
         {{-- timeline icon --}}
-        <i class="fa fa-pencil bg-blue"></i>
-        <div class="timeline-item">
-            <span class="time">
-                <i class="fa fa-clock-o"></i>
-                {{ $diagnostico->created_at->format('H:i') }}
-            </span>
-            <h3 class="timeline-header">
-                <a href="#">Se diagnosticó {{ $diagnostico->disease->name }}</a>
-            </h3>
-        </div>
+        @include('user.diagnostic._partial', [
+            'object' => $diagnostico,
+            'editRoute' => 'user::diagnosticos::detail',
+            'name' => $diagnostico->disease->name,
+            'content' => 'El diagnostico',
+        ])
     </li>
     @endforeach
     {{-- END timeline item --}}

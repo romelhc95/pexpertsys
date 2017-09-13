@@ -3,6 +3,8 @@
 namespace Tesis\Http\Controllers\Admin;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Hash;
+use Laracasts\Flash\Flash;
 use Nicolaslopezj\Searchable\SearchableTrait;
 use Tesis\Http\Controllers\Controller;
 use Tesis\Http\Requests\SearchRequest;
@@ -17,20 +19,31 @@ class UserController extends Controller
 
     public function create()
     {
-        $states   = State::pluck('name', 'id')->toArray();
-        $usuarios = User::with('state', 'diagnostics')
+//        $states   = State::pluck('name', 'id')->toArray();
+//        $usuarios = User::with('state', 'diagnostics')
+            $usuarios = User::with( 'diagnostics')
             ->whereNotIn('id', [1])
             ->orderBy('created_at', 'desc')
             ->paginate(20);
 
         return view('admin.user.index')
-            ->with('states', $states)
+//            ->with('states', $states)
             ->with('usuarios', $usuarios);
     }
 
+    /**
+     * @param UserRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function store(UserRequest $request)
     {
         $form = collect_clean($request->all());
+
+        $password = bcrypt($request['password']);
+
+        if(Hash::needsRehash($password)) {
+            $password = bcrypt($password);
+        }
 
         if ($request->has('birthday')) {
             $request['birthday'] = Carbon::createFromFormat('d/m/Y', $request->birthday)->format('Y-m-d');
@@ -38,7 +51,7 @@ class UserController extends Controller
 
         User::create($form->toArray());
 
-        alert('Usuario registrado correctamente');
+        flash('<i class="fa fa-floppy-o" aria-hidden="true"></i><span> Usuario registrado correctamente</span>')->success();
         return redirect()->back();
     }
 
@@ -46,11 +59,11 @@ class UserController extends Controller
     {
         $id = $this->decode($hash_id);
 
-        $states  = State::pluck('name', 'id')->toArray();
+//        $states  = State::pluck('name', 'id')->toArray();
         $usuario = User::findOrFail($id);
 
         return view('admin.user.edit')
-            ->with('states', $states)
+//            ->with('states', $states)
             ->with('usuario', $usuario);
     }
 
@@ -63,16 +76,17 @@ class UserController extends Controller
 
         $usuario->update($form->toArray());
 
+        $usuario->save();
         // actualizando departamento
-        if ($request->has('state')) {
-            if ($request->state != $usuario->state_id) {
-                $state = State::findOrFail($request->state);
-                $usuario->state()->associate($state);
-                $usuario->save();
-            }
-        }
+//        if ($request->has('state')) {
+//            if ($request->state != $usuario->state_id) {
+//                $state = State::findOrFail($request->state);
+//                $usuario->state()->associate($state);
+//                $usuario->save();
+//            }
+//        }
 
-        alert('Se modificó el usuario correctamente');
+        flash('<i class="fa fa-upload" aria-hidden="true"></i><span> Usuario modificado correctamente.</span>')->warning();
         return redirect()->route('admin::usuarios::create');
     }
 
@@ -83,7 +97,7 @@ class UserController extends Controller
         $user = User::findOrFail($id);
         $user->delete();
 
-        alert('Se eliminó el usuario con éxito');
+        flash('<i class="fa fa-trash" aria-hidden="true"></i><span> Usuario Eliminado correctamente.</span>')->error();
         return redirect()->back();
     }
 
@@ -93,7 +107,8 @@ class UserController extends Controller
             return redirect()->route('admin::usuarios::create');
         }
 
-        $usuarios = User::search($request->search)->with('state', 'diagnostics')->get();
+//        $usuarios = User::search($request->search)->with('state', 'diagnostics')->get();
+        $usuarios = User::search($request->search)->with('name', 'diagnostics')->get();
 
         return view('admin.user.result')->with('usuarios', $usuarios);
     }

@@ -2,6 +2,7 @@
 @section('breadcrumb') Perfil @stop
 @section('title') Perfil @stop
 @section('content')
+    @include('flash::message')
     <div class="row">
         <div class="col-md-3">
             <div class="box box-primary">
@@ -24,7 +25,6 @@
                     <li><a href="#password" data-toggle="tab">Contraseña</a></li>
                 @endif
                 </ul>
-
                 <div class="tab-content">
                 @if ($errors->has('old_password') || $errors->has('new_password') || $errors->has('new_password_confirmation'))
                     <div class="tab-pane" id="configuracion">
@@ -39,7 +39,7 @@
                             {!! Field::text('birthday', isset(auth()->user()->birthday) ? auth()->user()->birthday->format('d/m/Y') : null, ['label' => 'Nacimiento']) !!}
                             {!! Field::text('phone', auth()->user()->phone, ['label' => 'Teléfono']) !!}
                             {!! Field::text('mobil', auth()->user()->mobil, ['label' => 'Celular']) !!}
-                            {!! Field::select('state', $states, auth()->user()->state_id, ['label' => 'Departamento', 'class' => 'select2', 'data-width' => '100%']) !!}
+                            {{--{!! Field::select('state', $states, auth()->user()->state_id, ['label' => 'Departamento', 'class' => 'select2', 'data-width' => '100%']) !!}--}}
                             {!! Form::submit('Actualizar', ['class' => 'btn btn-danger']) !!}
                         {!! Form::close() !!}
                     </div>
@@ -60,4 +60,7 @@
             </div>
         </div>
     </div>
+    <script>
+        $('#flash-overlay-modal').modal();
+    </script>
 @stop

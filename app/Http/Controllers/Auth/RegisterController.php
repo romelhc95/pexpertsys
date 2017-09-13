@@ -63,6 +63,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+        flash('<i class="fa fa-info-circle" aria-hidden="true"></i><span> Usuario creado correctamente</span>')->warning();
         $user->roles()->attach(Role::where('name', 'agricultor')->first());
         return $user;
     }

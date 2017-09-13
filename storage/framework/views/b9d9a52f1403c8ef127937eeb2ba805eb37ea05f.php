@@ -150,6 +150,12 @@
                 
                 <section class="content-header">
                     <h1><i class="fa fa-stethoscope"></i> PExpertSys</h1>
+                    <br>
+                    <?php if($alert = Session::get('message')): ?>
+                        <div class="alert alert-success" role="alert">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i><span><b> <?php echo e($alert); ?> <?php echo e(auth()->user()->name); ?></b></span>
+                        </div>
+                    <?php endif; ?>
                     <ol class="breadcrumb">
                         <li>
                             <a href="<?php echo e(route('admin::home')); ?>">

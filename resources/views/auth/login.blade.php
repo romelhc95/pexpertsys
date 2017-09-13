@@ -28,6 +28,7 @@
             </div>{{-- /.login-logo --}}
             <div class="login-box-body">
                 <p class="login-box-msg">{{ trans('messages.login.welcome') }}</p>
+                @include('flash::message')
                 {{--<form method="POST" action="{{ route('login') }}">--}}
                 {{--<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />--}}
                 {!! Form::open(['route'=>'login', 'method'=>'POST']) !!}
@@ -49,8 +50,8 @@
                         {{--{!! $errors->first('password', '<p class="text-danger">:message</p>') !!}--}}
                         @if ($errors->has('password'))
                             <span class="help-block">
-                                            <strong>{{ $errors->first('password') }}</strong>
-                                        </span>
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
                         @endif
                     </div>
                     <div class="row">

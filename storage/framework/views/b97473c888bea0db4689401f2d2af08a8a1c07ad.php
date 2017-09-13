@@ -1,8 +1,11 @@
 <?php if(empty($usuario)): ?>
     <?php echo Field::email('email', !empty($usuario) ? $usuario->email : old('email'), ['label' => 'Correo Electrónico(*)']); ?>
 
-	<?php echo Field::password('password', ['label' => 'Contraseña(*)']); ?>
+    <?php echo Form::label('Contraseña(*)'); ?>
 
+    <?php echo Form::password('password', ['class'=>'form-control']); ?>
+
+	
 <?php endif; ?>
 <?php echo Field::text('name', !empty($usuario) ? $usuario->name : old('name'), ['label' => 'Nombre(*)']); ?>
 
@@ -10,7 +13,6 @@
 
 <?php echo Field::radios('gender', ['1' => 'Masculino', '0' => 'Femenino'], !empty($usuario) ? $usuario->gender : old('gender'), ['label' => 'Género']); ?>
 
-<?php echo Field::select('state', $states, !empty($usuario) ? $usuario->state_id : old('state'), ['label' => 'Departamento', 'empty' => false, 'class' => 'select2', 'data-width' => '100%']); ?>
 
 <?php if (! (empty($usuario))): ?>
     <?php echo $__env->make('partials._dropdate', [

@@ -59,6 +59,7 @@ class LoginController extends Controller
     public function getLogoutUser(){
         Auth::logout();
         Session::flush();
+        flash('<i class="fa fa-sign-out" aria-hidden="true"></i><span> Cierre de sesión satisfactorio</span>')->error()->important();
         return redirect()->route('login');
     }
 
@@ -68,7 +69,7 @@ class LoginController extends Controller
     public function getLogoutAdmin(){
         Auth::logout();
         Session::flush();
-//        auth('admin')->logout();
+        flash('<i class="fa fa-sign-out" aria-hidden="true"></i><span> Cierre de sesión satisfactorio</span>')->error()->important();
         return redirect()->route('login');
     }
 }

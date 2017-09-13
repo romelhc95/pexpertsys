@@ -19,9 +19,20 @@ class DiagnosticController extends Controller
 
     public function index()
     {
-        $diagnosticos = Diagnostic::where('user_id', auth()->id())->paginate(20);
+        $diagnosticos = Diagnostic::orderBy('id','desc')->where('user_id', auth()->id())->paginate(20);
 
         return view('user.diagnostic.index')->with('diagnosticos', $diagnosticos);
+    }
+
+    public function detail($id){
+        $diagnostic = Diagnostic::findOrFail($this->decode($id));
+        $solutions = SoluDisea::with('solution')
+            ->where('disease_id', $diagnostic->disease_id)
+            ->get()
+            ->groupBy('number');
+        return view('user.diagnostic.detail')
+            ->with('solutions', $solutions)
+            ->withDiagnostic($diagnostic);
     }
 
     public function create(Request $request)
@@ -186,41 +197,6 @@ class DiagnosticController extends Controller
         alert('Se eliminó el síntoma ingresado con éxito');
         return redirect()->back();
     }
-
-    /**
-     * @param null $hashed
-     * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
-     */
-
-//    public function show($hashed=null)
-//    {
-//        if (is_null($hashed)) {
-//            return view('user.diagnostic.show');
-//        }
-//
-//        $id = $this->decode($hashed);
-////        $ids = '2';
-////        $enfermedad = Disease::findOrFail($this->encode($hashed));
-//        $diagnostico = Diagnostic::findOrFail($id);
-////        $steps = Step::pluck('number', 'id')->toArray();
-////        $solutions = DB::table('solutions')->orderBy('description', 'asc')->pluck('description', 'id')->toArray();
-//        $soludiseas = SoluDisea::with('solution')
-//            ->where('disease_id', $diagnostico->id)
-////            ->orderBy('steps_id', 'asc')
-//            ->get()
-//            ->groupBy('number');
-//
-//        if ($diagnostico->user_id != auth()->id()) {
-//            return redirect()->back();
-//        }
-//
-//        return view('user.diagnostic.show')
-////            ->with('enfermedad', $enfermedad)
-////            ->with('solutions', $solutions)
-////            ->with('steps', $steps)
-//            ->with('soludiseas', $soludiseas)
-//            ->with('diagnostico', $diagnostico);
-//    }
 
     /**
      * @param null $hashed

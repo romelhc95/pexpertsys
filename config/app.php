@@ -6,7 +6,8 @@ return [
     'env' => env('APP_ENV', 'production'),
     'debug' => env('APP_DEBUG', false),
     'url' => env('APP_URL', 'http://localhost'),
-    'timezone' => 'UTC',
+//    'timezone' => 'UTC',
+    'timezone'  => 'America/Lima',
     'locale' => 'es',
     'fallback_locale' => 'en',
     'key' => env('APP_KEY'),
@@ -83,6 +84,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         Tesis\Providers\EventServiceProvider::class,
         Tesis\Providers\RouteServiceProvider::class,
+        //Session::flash
+        Laracasts\Flash\FlashServiceProvider::class,
     ],
 
     /*
@@ -139,6 +142,7 @@ return [
         'Active'    => HieuLe\Active\Facades\Active::class,
         'Debugbar'  => Barryvdh\Debugbar\Facade::class,
         'Hashids'   => Vinkla\Hashids\Facades\Hashids::class,
+        'Flash'     => 'Laracast\Flash\Flash',
     ],
 
 ];

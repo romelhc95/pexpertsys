@@ -5,13 +5,24 @@
     <div class="col-md-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title"><strong>Resultado de Diagnóstico</strong></h3>
+                <h3 class="box-title">
+                    <strong>Resultado de Diagnóstico del dia
+                        <span class="time"><i class="fa fa-calendar-times-o" aria-hidden="true"></i>
+                            <?php echo e($diagnostico->created_at->format('d-m-Y')); ?>
+
+                            </span> a las
+                        <span class="time"><i class="fa fa-clock-o"></i>
+                            <?php echo e($diagnostico->created_at->format('H:i')); ?>
+
+                            </span>
+                    </strong>
+                </h3>
             </div>
             <div class="box-body">
                 <div class="jumbotron">
 
                     <?php if (! (empty($diagnostico))): ?>
-                        <h5 class="text-center"><strong>Su planta o plantaciones de banano padecen: </strong></h5>
+                        <h5 class="text-center"><strong>La planta banano padece: </strong></h5>
                         <h1 class="text-center"><strong><?php echo e($diagnostico->disease->name); ?></strong></h1>
                         <p class="text-center"><strong>Descripción:</strong></p>
                         <h3 class="text-center"><?php echo e($diagnostico->disease->description); ?></h3>

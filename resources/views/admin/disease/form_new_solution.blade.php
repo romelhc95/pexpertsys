@@ -3,4 +3,4 @@
     'class' => 'select2',
     'data-width' => '100%'
 ]) !!}
-{!! $errors->has('solutions', '<p class="text-danger">:message</p>') !!}
+{!! $errors->first('solutions', '<p class="text-danger">:message</p>') !!}

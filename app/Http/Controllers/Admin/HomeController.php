@@ -40,10 +40,10 @@ class HomeController extends Controller
 
     public function profile()
     {
-        $states = DB::table('states')->orderBy('name', 'asc')->pluck('name', 'id')->toArray();
+//        $states = DB::table('states')->orderBy('name', 'asc')->pluck('name', 'id')->toArray();
         //$states = State::orderBy('name', 'asc')->lists('name', 'id')->toArray();
 
-        return view('admin.profile')->with('states', $states);
+        return view('admin.profile');
     }
 
     public function profile_update(ProfileRequest $request)
@@ -52,25 +52,27 @@ class HomeController extends Controller
         if ($request->email != auth()->user()->email) {
             $user = User::whereEmail($request->email)->get();
             if (!empty($user)) {
-                alert('El email ingresado ya existe', 'danger');
+                flash('<i class="fa fa-info-circle" aria-hidden="true"></i><span> El email ingresado ya existe.</span>')->error();
                 return redirect()->back();
             }
         }
 
-        $state = State::findOrFail($request->state);
+//        $state = State::findOrFail($request->state);
 
         $user = auth()->user();
-        $user->state()->associate($state);
+//        $user->state()->associate($state);
         $user->update($request->all());
 
-        alert('Se modificaron los datos con éxito');
+        flash('<i class="fa fa-upload" aria-hidden="true"></i><span> Los datos se modificarón correctamente.</span>')->warning();
+//        alert('Se modificaron los datos con éxito');
         return redirect()->back();
     }
 
     public function password_update(PasswordRequest $request)
     {
         if (!Hash::check($request->old_password, auth()->user()->password)) {
-            alert('La contraseña ingresada no coincide con la actual', 'danger');
+            flash('<i class="fa fa-info-circle" aria-hidden="true"></i><span> La contraseña ingresada no coincide con la actual.</span>')->warning()->important();
+//            alert('La contraseña ingresada no coincide con la actual', 'danger');
             return redirect()->back();
         }
 
@@ -78,7 +80,8 @@ class HomeController extends Controller
         $user->password = bcrypt($request->new_password);
         $user->save();
 
-        alert('Se cambió la contraseña con éxito');
+        flash('<i class="fa fa-upload" aria-hidden="true"></i><span> La contraseña se modificó correctamente.</span>')->warning();
+//        alert('Se cambió la contraseña con éxito');
         return redirect()->back();
     }
 }
