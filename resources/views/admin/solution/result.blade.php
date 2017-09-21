@@ -15,7 +15,6 @@
                     <table class="table table-responsive table-hover">
                         <thead>
                         <th><i class="fa fa-gear"></i></th>
-                        <th>Paso</th>
                         <th>Descripción</th>
                         <th>Agregado</th>
                         <th class="text-center">Plagas ó Enfermedades</th>
@@ -32,7 +31,6 @@
                                         'content' => 'La Solución',
                                     ])
                                 </td>
-                                <td>{{ $solution->passed }}</td>
                                 <td>{{ $solution->description }}</td>
                                 <td>{{ $solution->created_at->format('d/m/Y') }}</td>
                                 <td class="text-center">

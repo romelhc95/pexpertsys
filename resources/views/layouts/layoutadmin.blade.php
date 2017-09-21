@@ -8,6 +8,9 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         {{-- Compiled scripts --}}
         {{--<link rel="stylesheet" href="{{ elixir('css/all.css') }}">--}}
+        {{--{{ Html::style('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css') }}--}}
+        {{--{{ Html::style('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-reboot.min.css') }}--}}
+        {!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css') !!}
         {{ Html::style('css/all.css') }}
         {{ Html::style('css/font-awesome.css') }}
 
@@ -184,5 +187,11 @@
         {{ Html::script('js/all.js') }}
         {{ Html::script('build/js/morris.min.js') }}
         {{ Html::script('build/js/graphs.js') }}
+        {{--{{ Html::script('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js') }}--}}
+        <script>
+            $(document).ready(function() {
+                $('.js-example-basic-single').select2();
+            });
+        </script>
     </body>
 </html>

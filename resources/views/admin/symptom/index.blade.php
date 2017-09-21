@@ -31,6 +31,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title"><strong>{{ trans('messages.label.symptom.list') }}</strong></h3>
             </div>
+            @include('flash::message')
             <div class="box-body">
                 {!! Form::open(['method' => 'GET', 'route' => 'admin::sintomas::buscar']) !!}
                     @include('partials._search')

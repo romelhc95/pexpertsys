@@ -2,7 +2,9 @@
 
 namespace Tesis\Http\Controllers\Admin;
 
+use File;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\DB;
 use Tesis\Http\Controllers\Controller;
 use Tesis\Http\Requests\DiseaseRequest;
@@ -26,26 +28,80 @@ class DiseaseController extends Controller
     public function create()
     {
         $types  = Type::pluck('description', 'id')->toArray();
-        $enfermedades = Disease::with('rules', 'diagnostics', 'solu_diseas', 'type')->orderBy('name', 'asc')->paginate(10);
+        $enfermedades = Disease::with('rules', 'diagnostics', 'solu_diseas', 'type')->orderBy('id', 'desc')->paginate(10);
 
         return view('admin.disease.index')
             ->with('types', $types)
             ->with('enfermedades', $enfermedades);
     }
 
+    public function image($hash_id){
+        if (is_null($hash_id)) {
+            return view('admin.disease.index');
+        }
+
+        $id         = $this->decode($hash_id);
+        $disease = Disease::findOrFail($id);
+        $symtomps = Rule::with('symptom')
+            ->where('disease_id', $disease->id)
+            ->get()
+            ->groupBy('number');
+        $solutions = SoluDisea::with('solution')
+            ->where('disease_id', $disease->id)
+            ->get()
+            ->groupBy('number');
+
+
+//        if ($disease->user_id != auth()->id()) {
+//            return redirect()->back();
+//        }
+//        $diseases = Disease::all();;
+        return view('admin.disease.image')
+            ->with('symtomps', $symtomps)
+            ->with('solutions', $solutions)
+            ->with('disease', $disease);
+    }
+
+    public function images($filename){
+        $path = storage_path("app/images/$filename");
+        if(!File::exists($path)) abort(404);
+        $file = File::get($path);
+        $type = File::mimeType($path);
+        $response = Response::make($file, 200);
+        $response->header("Content-Type", $type);
+        return $response;
+    }
+
     public function store(DiseaseRequest $request)
     {
-        $enfermedad = Disease::create($request->all());
+        $hasFile = $request->hasFile('image') && $request->image->isValid();
+        //        $enfermedad = Disease::create($request->all());
+        $enfermedad = new Disease();
+        $enfermedad->name = $request->name;
+        $enfermedad->name_c = $request->name_c;
+        $enfermedad->description = $request->description;
+        $enfermedad->type_id = $request->type_id;
 
-        alert('Se ingresó la enfermedad correctamente');
-        return redirect()->back();
+        if ($hasFile){
+            $extension = $request->image->extension();
+            $enfermedad->extension = $extension;
+        }
+        if ($enfermedad->save()){
+            if ($hasFile){
+                $request->image->storeAs('images', "$enfermedad->id.$extension");
+            }
+            flash('<i class="fa fa-floppy-o" aria-hidden="true"></i><span> Síntoma se registro correctamente</span>')->success();
+            return redirect()->back();
+        }else{
+            flash('<i class="fa fa-exclamation" aria-hidden="true"></i><span> Síntoma no se registro correctamente</span>')->warning();
+            return redirect()->back();
+        }
     }
 
     public function edit($hash_id)
     {
         $id         = $this->decode($hash_id);
         $enfermedad = Disease::findOrFail($id);
-
         $e_sintomas = $enfermedad->rules->pluck('id')->toArray();
         $e_solutions = $enfermedad->solu_diseas->pluck('id')->toArray();
 
@@ -63,7 +119,7 @@ class DiseaseController extends Controller
 
         $enfermedad->update($request->all());
 
-        alert('Se actualizó la enfermedad correctamente');
+        flash('<i class="fa fa-upload" aria-hidden="true"></i><span> El síntoma se modificó correctamente.</span>')->warning();
         return redirect()->route('admin::enfermedades::create');
     }
 
@@ -102,7 +158,7 @@ class DiseaseController extends Controller
 
         $enfermedad->delete();
 
-        alert('Se eliminó la enfermedad y/o sus reglas y soluciones correctamente');
+        flash('<i class="fa fa-trash" aria-hidden="true"></i><span> La enfermedad y/o sus sintomas y soluciones se eliminaron  correctamente.</span>')->error();
         return redirect()->back();
     }
 
@@ -154,7 +210,7 @@ class DiseaseController extends Controller
                 $rule->save();
             }
 
-            alert('Se registró la regla con éxito');
+            flash('<i class="fa fa-floppy-o" aria-hidden="true"></i><span> La regla se registro correctamente</span>')->success();
             return redirect()->back();
         }
 
@@ -176,7 +232,7 @@ class DiseaseController extends Controller
 
         $rulesForDecrease = Rule::where('number', '>', $ruleNumber)->decrement('number');
 
-        alert('Se eliminó la regla con éxito');
+        flash('<i class="fa fa-trash" aria-hidden="true"></i><span> La regla fue eliminada correctamente.</span>')->error();
         return redirect()->back();
     }
 
@@ -258,7 +314,7 @@ class DiseaseController extends Controller
                 $soludisea->save();
             }
 
-            alert('La solución se registro con éxito');
+            flash('<i class="fa fa-floppy-o" aria-hidden="true"></i><span> La solución se registro correctamente</span>')->success();
             return redirect()->back();
         }
 
@@ -274,7 +330,7 @@ class DiseaseController extends Controller
 
         $soludiseasForDecrease = SoluDisea::where('number', '>', $soludiseaNumber)->decrement('number');
 
-        alert('La Solución se eliminó con éxito');
+        flash('<i class="fa fa-trash" aria-hidden="true"></i><span> La solución se elimino correctamente.</span>')->error();
         return redirect()->back();
     }
 

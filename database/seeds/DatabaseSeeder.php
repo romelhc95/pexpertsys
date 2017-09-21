@@ -9,20 +9,22 @@ use Tesis\Models\User;
 class DatabaseSeeder extends Seeder
 {
     /**
-     *
+         *
      */
     public function run()
     {
-        $this->call(UserSeeder::class);
-        $this->call(RoleSeeder::class);
-        $this->call(RoleUserSeeder::class);
+        $this->call(TruncateTablesSeeder::class);
+        $this->call(StaffSeeder::class);
+//        $this->call(RoleSeeder::class);
+//        $this->call(RoleUserSeeder::class);
         $this->call(TypeSeeder::class);
-        $this->call(StepSeeder::class);
         $this->call(SymptomSeeder::class);
         $this->call(DiseaseSeeder::class);
         $this->call(RuleSeeder::class);
         $this->call(SolutionSeeder::class);
         $this->call(SoluDiseaSeeder::class);
+        $this->call(UserSeeder::class);
+        $this->call(DiagnosticSeeder::class);
 
 
 
@@ -39,8 +41,8 @@ class DatabaseSeeder extends Seeder
 //        $this->call(TruncateTables::class);
 //        $this->call(StaffSeeder::class);
 //        $this->call(UserSeeder::class);
-//        $this->call(SymptomSeeder::class);
-//        $this->call(DiseaseSeeder::class);
+////        $this->call(SymptomSeeder::class);
+////        $this->call(DiseaseSeeder::class);
 //        $this->call(DiagnosticSeeder::class);
 //    }
 //}
@@ -56,11 +58,11 @@ class DatabaseSeeder extends Seeder
 //
 //class TruncateTables extends Seeder
 //{
-//    /**
-//     * Set foreign key hace que se active y desactive las
-//     * claves foraneas para poder limpiar la base de
-//     * datos sin que aparezca ningun tipo de errores
-//     */
+////    /**
+////     * Set foreign key hace que se active y desactive las
+////     * claves foraneas para poder limpiar la base de
+////     * datos sin que aparezca ningun tipo de errores
+////     */
 //    public function run()
 //    {
 //        DB::statement('SET FOREIGN_KEY_CHECKS=0;');

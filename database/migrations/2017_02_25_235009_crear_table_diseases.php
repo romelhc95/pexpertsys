@@ -17,6 +17,7 @@ class CrearTableDiseases extends Migration
             $table->string("name");
             $table->string("name_c")->nullable();
             $table->integer('type_id')->unsigned();
+
             $table->timestamps();
             $table->softDeletes();
         });

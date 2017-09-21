@@ -14,7 +14,7 @@ class SymptomController extends Controller
 
     public function create()
     {
-        $sintomas = Symptom::orderBy('name', 'asc')->with('rules')->paginate(10);
+        $sintomas = Symptom::orderBy('id', 'desc')->with('rules')->paginate(10);
 
         return view('admin.symptom.index')
             ->with('sintomas', $sintomas);
@@ -24,7 +24,7 @@ class SymptomController extends Controller
     {
         Symptom::create($request->all());
 
-        alert('Se registró el síntoma correctamente');
+        flash('<i class="fa fa-floppy-o" aria-hidden="true"></i><span> Sintoma se registro correctamente</span>')->success();
         return redirect()->back();
     }
 
@@ -44,7 +44,7 @@ class SymptomController extends Controller
         $sintoma = Symptom::findOrFail($id);
         $sintoma->update($request->all());
 
-        alert('Se modificó el síntoma con éxito');
+        flash('<i class="fa fa-upload" aria-hidden="true"></i><span> El síntoma se modificó correctamente.</span>')->warning();
         return redirect()->route('admin::sintomas::create');
     }
 
@@ -61,7 +61,7 @@ class SymptomController extends Controller
 
         $sintoma->delete();
 
-        alert('Se eliminó el síntoma con éxito');
+        flash('<i class="fa fa-trash" aria-hidden="true"></i><span> Se Elimino el síntoma correctamente.</span>')->error();
         return redirect()->route('admin::sintomas::create');
     }
 

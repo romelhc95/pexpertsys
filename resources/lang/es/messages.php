@@ -45,7 +45,7 @@ return [
         'states'          => 'Estados',
         'passed'          => 'Paso',
         'plant'         => [
-            'code' => 'Codigo para identificar la planta',
+            'number' => 'Numero de plantas',
             'area' => 'Area de ubicación de la planta',
             'sector' => 'Sector de ubicación de la planta',
             'list'        => 'Listado de PLantas',

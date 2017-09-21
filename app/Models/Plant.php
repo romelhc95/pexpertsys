@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Plant extends Model
 {
-    protected $fillable = [ 'code', 'sector', 'area', 'delete_at'];
+    protected $fillable = [ 'number', 'sector', 'area', 'delete_at'];
 }

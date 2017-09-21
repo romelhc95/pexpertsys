@@ -14,6 +14,10 @@
             </a>
         </li>
         <li>
+            {{--<a href="{{ url("admin/enfermedades/image/$enfermedad->id") }}"><i class="fa fa-pencil"></i> Ver Detalle</a>--}}
+            <a href="{{ route('admin::enfermedades::image', Hashids::encode($enfermedad->id)) }}"><i class="fa fa-eye"></i> Ver Detalle</a>
+        </li>
+        <li>
             <a href="{{ route('admin::enfermedades::edit', Hashids::encode($enfermedad->id)) }}">
             <i class="fa fa-pencil"></i> Editar</a>
         </li>

@@ -32,6 +32,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title"><strong><?php echo e(trans('messages.label.symptom.list')); ?></strong></h3>
             </div>
+            <?php echo $__env->make('flash::message', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             <div class="box-body">
                 <?php echo Form::open(['method' => 'GET', 'route' => 'admin::sintomas::buscar']); ?>
 

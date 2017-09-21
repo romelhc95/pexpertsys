@@ -18,7 +18,7 @@ class PlantController extends Controller
      */
     public function create()
     {
-        $plants = Plant::orderBy('code', 'desc')->paginate(10);
+        $plants = Plant::orderBy('number', 'desc')->paginate(10);
         return view('admin.plant.index')->with('plants', $plants);
     }
 
@@ -28,9 +28,20 @@ class PlantController extends Controller
      */
     public function store(PlantRequest $request)
     {
-        Plant::create($request->all());
-        alert('La planta fue registrada correctamente');
-        return redirect()->back();
+        $plant = new Plant;
+        $length = $plant->number=$request->number;
+//        dd($plant);
+        for ($i=0; $i<=$length; $i++) {
+            $i->save();
+//            dd($i);
+        }
+//        alert('Las plantas fueron registradas correctamente');
+//        return redirect('admin/plantas/listar');
+//        $i->save();
+//        $plant->number = $request->number;
+//        Plant::create($request->all());
+//            return redirect('admin/plantas/listar');
+//        var_dump($request->number);
     }
 
     /**

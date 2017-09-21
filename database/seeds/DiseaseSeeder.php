@@ -30,7 +30,7 @@ class DiseaseSeeder extends Seeder
         DB::table('diseases')->insert([
             'name'          =>  'Arañita Roja',
             'name_c'        =>  'Tetranychus cinnabarinus',
-            'description'   =>  'Añarita Roja',
+            'description'   =>  'Con su aparato bucal raspador y chupador las larvas, ninfas y adultos se alimentan del jugo celular. Las colonias se localizan con bastante frecuencia cerca del nervio central y en el envés de las hojas, provocando manchas de color blanquecino que se extienden por toda la hoja. A medida que se intensifica el ataque se tornan amarillas hasta que se secan y toman aspecto de quemadas. En las plantaciones muy jóvenes pueden causar defoliación y hasta la muerte de las plantas cuando los daños son severos. Este ácaro ataca a las plantas de todas las edades pero fundamentalmente a las de fomento. Se caracteriza por producir telarañas en las zonas donde actúa.',
             'type_id'       =>  2,
             'created_at'    => date("Y-m-d H:i:s")
         ]);
@@ -38,17 +38,17 @@ class DiseaseSeeder extends Seeder
         DB::table('diseases')->insert([
             'name'          =>  'Picudo Rayado',
             'name_c'        =>  'Metamasius hemipterus',
-            'description'   =>  'Picudo Rayado',
+            'description'   =>  'La intensidad del daño es mayor en plamtaciones que no reciben mantenimiento creandose condiciones prpicias para la multiplicacion del insecto, el cual se adapta bien en ambientes humedos y oscuros. Debido al ambito nocturno de los adultos, pueden pasar desapercibidos hasta cuando los daños ocacionados en las plantas sean evidentes y economicamente significativos. Las larvas son los causantes del daño y no los adultos, pues estos se alimentan de calcetas y seudotallos en descomposición. Las larvas se alimentan y desarrollan dentro del rizoma o cepa formando galerias que obstruyen el paso del agua.',
             'type_id'       =>  2,
-            'created_at'    => date("Y-m-d H:i:s")
+            'created_at'    =>  date("Y-m-d H:i:s")
         ]);
 
         DB::table('diseases')->insert([
             'name'          =>  'Picudo Negro',
             'name_c'        =>  'Cosmopolitus sordidus',
-            'description'   =>  'Picudo Negro',
+            'description'   =>  'La intensidad del daño es mayor en plamtaciones que no reciben mantenimiento creandose condiciones prpicias para la multiplicacion del insecto, el cual se adapta bien en ambientes humedos y oscuros. Debido al ambito nocturno de los adultos, pueden pasar desapercibidos hasta cuando los daños ocacionados en las plantas sean evidentes y economicamente significativos. Las larvas son los causantes del daño y no los adultos, pues estos se alimentan de calcetas y seudotallos en descomposición. Las larvas se alimentan y desarrollan dentro del rizoma o cepa formando galerias que obstruyen el paso del agua.',
             'type_id'       =>  2,
-            'created_at'    => date("Y-m-d H:i:s")
+            'created_at'    =>  date("Y-m-d H:i:s")
         ]);
 
         DB::table('diseases')->insert([
@@ -56,12 +56,12 @@ class DiseaseSeeder extends Seeder
             'name_c'        =>  'Colaspis sp',
             'description'   =>  'Raspador de Fruto',
             'type_id'       =>  2,
-            'created_at'    => date("Y-m-d H:i:s")
+            'created_at'    =>  date("Y-m-d H:i:s")
         ]);
         DB::table('diseases')->insert([
             'name'          =>  'Mosca Blanca',
             'name_c'        =>  'Alerodicus dispersus',
-            'description'   =>  'Mosca Blanca',
+            'description'   =>  'Las moscas blancas poseen un aparato bucal tipo picador - succionador de la savia de la planta. Su sistema digestivo elimina azucares, llamados mielecillas, que posibilitan el crecimiento de hongos causantes de la fumagina.',
             'type_id'       =>  2,
             'created_at'    => date("Y-m-d H:i:s")
         ]);
@@ -82,16 +82,23 @@ class DiseaseSeeder extends Seeder
         DB::table('diseases')->insert([
             'name'          =>  'Trips de la Mancha Roja',
             'name_c'        =>  'Chaetanaphotrips signipennis',
-            'description'   =>  'Trips de la Mancha Roja',
+            'description'   =>  'Los trips tienen un aparato bucal raspador – lamedor y forman grandes colonias. Los adultos alados y las ninfas se localizan entre los dedos de la fruta poco después de que los pétalos de las flores se secan. Al alimentarse insertan su estilete y causan un exudado de la savia que rápidamente se oxida y se torna de color café rojizo. El daño es una mancha rojiza en la epidermis de la cáscara del fruto, que en principio es ovalada y se presenta en las áreas donde se tocan dos frutos, extendiéndose, luego, sobre toda la superficie. La cáscara se vuelve áspera y sin brillo. Inicialmente, el daño es más evidente en las primeras dos manos, y casi siempre, en el punto de contacto de los dedos, el daño se manifiesta más o menos a las dos semanas de la salida de la inflorescencia.',
             'type_id'       =>  2,
             'created_at'    => date("Y-m-d H:i:s")
         ]);
         DB::table('diseases')->insert([
             'name'          =>  'Erwinia',
             'name_c'        =>  'Erwinia',
-            'description'   =>  'Erwinia',
+            'description'   =>  'La pudrición avanza progresivamente hacia la base del seudotallo y al mismo tiempo, penetra en los tejidos de las vainas sanas internas por contacto con las externas afectadas. A medida que las vainas internas son invalidas se produce un debilitamiento del seudotallo, esto ocasiona el doblamiento de la planta por la parte mas afectada. Si las plantas son afectadas en estado adulto, el peso de los racimos contribuye a un volcamiento de las mismas, antes que los frutos completen su normal desarrollo, produciendo racimos de poco valor comercial.',
             'type_id'       =>  1,
             'created_at'    => date("Y-m-d H:i:s")
+        ]);
+        DB::table('diseases')->insert([
+            'name'          =>  'Nematodo Barredor',
+            'name_c'        =>  'Radopholus similis',
+            'description'   =>  'Para saber si en el cultivo hay presencia de nematodo, solo hay un metodo seguro a través del analisis de muestras de raiz y suelo en el laboratorio. La importancia económica radica en la perdida del sistema de raices, que es la parte fundamental para la nutrición de la planta, el anclaje de la planta y disminución de los rendimientos.',
+            'type_id'       =>  2,
+            'created_at'    =>  date("Y-m-d H:i:s")
         ]);
     }
 }

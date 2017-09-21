@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="box-body">
-                {!! Form::open() !!}
+                {!! Form::open(['url'=>'admin/enfermedades/listar', 'method'=>'POST', 'files'=>true]) !!}
                     @include('admin.disease._form', ['buttonText' => 'Guardar', 'color' => 'success'])
                 {!! Form::close() !!}
             </div>
@@ -31,6 +31,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title"><strong>Listado de Enfermedades</strong></h3>
             </div>
+            @include('flash::message')
             <div class="box-body">
                 <div class="table-responsive">
                     {!! Form::open(['method' => 'GET', 'route' => 'admin::enfermedades::buscar']) !!}

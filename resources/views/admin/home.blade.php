@@ -62,13 +62,14 @@
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="small-box bg-green">
                 <div class="inner">
-                    <h3>{{ $countPlant }}</h3>
+                    {{--<h3>{{ $countPlant }}</h3>--}}
+                    <h3>0</h3>
                     <p>{{ trans('messages.label.plants') }}</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-tree"></i>
                 </div>
-                <a href="{{ route('admin::plantas::create') }}" class="small-box-footer">
+                <a href="{{-- route('admin::plantas::create') --}}" class="small-box-footer">
                     {{ trans('messages.label.more_info') }} <i class="fa fa-arrow-circle-right"></i>
                 </a>
             </div>

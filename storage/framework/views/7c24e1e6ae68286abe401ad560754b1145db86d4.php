@@ -61,13 +61,14 @@
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="small-box bg-green">
                 <div class="inner">
-                    <h3><?php echo e($countPlant); ?></h3>
+                    
+                    <h3>0</h3>
                     <p><?php echo e(trans('messages.label.plants')); ?></p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-tree"></i>
                 </div>
-                <a href="<?php echo e(route('admin::plantas::create')); ?>" class="small-box-footer">
+                <a href="" class="small-box-footer">
                     <?php echo e(trans('messages.label.more_info')); ?> <i class="fa fa-arrow-circle-right"></i>
                 </a>
             </div>

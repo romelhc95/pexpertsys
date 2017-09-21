@@ -43,6 +43,9 @@ Route::group(['middleware' => 'auth'], function () {
         Route::group(['prefix' => 'enfermedades', 'as' => 'enfermedades::'], function () {
             Route::get('/listar', ['as' => 'create', 'uses' => 'Admin\DiseaseController@create']);
             Route::post('/listar', ['as' => 'store', 'uses' => 'Admin\DiseaseController@store']);
+            Route::get('/image/{id?}', ['as' => 'image', 'uses' => 'Admin\DiseaseController@image']);
+//            Route::get('/mostrar/{id?}', ['as' => 'show', 'uses' => 'User\DiagnosticController@show']);
+            Route::get('/images/{filename}', ['as' => 'images', 'uses' => 'Admin\DiseaseController@images']);
             Route::get('/buscar', ['as' => 'buscar', 'uses' => 'Admin\DiseaseController@search']);
             Route::get('/editar/{id}', ['as' => 'edit', 'uses' => 'Admin\DiseaseController@edit']);
             Route::post('/editar/{id}', ['as' => 'update', 'uses' => 'Admin\DiseaseController@update']);
@@ -54,6 +57,16 @@ Route::group(['middleware' => 'auth'], function () {
             Route::post('/agregar-solucion/{id}', ['as' => 'solution', 'uses' => 'Admin\DiseaseController@add_solution']);
             Route::post('/eliminar-solucion/{id}', ['as' => 'solution::delete', 'uses' => 'Admin\DiseaseController@delete_solution']);
         });
+
+//        Route::get('admin/enfermedades/images/{filename}', function ($filename){
+//            $path = storage_path("app/images/$filename");
+//            if(!\File::exists($path)) abort(404);
+//            $file = \File::get($path);
+//            $type = \File::mimeType($path);
+//            $response = Response::make($file, 200);
+//            $response->header("Content-Type", $type);
+//            return $response;
+//        });
 
         // soluciones
         Route::group(['prefix' => 'soluciones', 'as' => 'soluciones::'], function () {

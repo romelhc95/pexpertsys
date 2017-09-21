@@ -8,6 +8,10 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         
         
+        
+        
+        <?php echo Html::style('https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css'); ?>
+
         <?php echo e(Html::style('css/all.css')); ?>
 
         <?php echo e(Html::style('css/font-awesome.css')); ?>
@@ -195,5 +199,11 @@
 
         <?php echo e(Html::script('build/js/graphs.js')); ?>
 
+        
+        <script>
+            $(document).ready(function() {
+                $('.js-example-basic-single').select2();
+            });
+        </script>
     </body>
 </html>

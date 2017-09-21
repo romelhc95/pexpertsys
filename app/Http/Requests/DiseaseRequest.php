@@ -17,12 +17,14 @@ class DiseaseRequest extends Request
             return [
                 'name'   => 'required|between:3,255',
                 'name_c' => 'between:3,1000',
+                'extension' =>  'image|20000'
             ];
         }
 
         return [
             'name'   => 'required|between:3,255|unique:diseases',
             'name_c' => 'between:3,1000',
+            'extension' =>  'image|20000'
         ];
     }
 
@@ -33,6 +35,7 @@ class DiseaseRequest extends Request
             'name.between'   => 'El nombre debe tener entre :min y :max caracteres',
             'name_c.between' => 'El nombre científico debe tener entre :min y :max caracteres',
             'name.unique'    => 'Esta nombre de enfermedad ya ha sido registrada',
+            'extension'     =>  'El archivo debe ser una imagen'
         ];
     }
 }

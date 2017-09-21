@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="box-body">
-                <?php echo Form::open(); ?>
+                <?php echo Form::open(['url'=>'admin/enfermedades/listar', 'method'=>'POST', 'files'=>true]); ?>
 
                     <?php echo $__env->make('admin.disease._form', ['buttonText' => 'Guardar', 'color' => 'success'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                 <?php echo Form::close(); ?>
@@ -32,6 +32,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title"><strong>Listado de Enfermedades</strong></h3>
             </div>
+            <?php echo $__env->make('flash::message', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             <div class="box-body">
                 <div class="table-responsive">
                     <?php echo Form::open(['method' => 'GET', 'route' => 'admin::enfermedades::buscar']); ?>

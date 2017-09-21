@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="box-body">
-                    {!! Form::open() !!}
+                    {!! Form::open(['url'=>'admin/plantas/listar', 'method'=>'POST']) !!}
                     @include('admin.plant._form', ['buttonText' => 'Guardar', 'color' => 'success'])
                     {!! Form::close() !!}
                 </div>
@@ -52,7 +52,7 @@
                                     <td>
                                         @include('admin.plant.boton')
                                     </td>
-                                    <td>{{ $plant->code }}</td>
+                                    <td>{{ $plant->number }}</td>
                                     <td>{{ $plant->area }}</td>
                                     <td>{{ $plant->sector }}</td>
                                     <td>{{ $plant->created_at->format('d/m/Y') }}</td>

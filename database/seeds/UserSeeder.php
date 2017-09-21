@@ -1,38 +1,23 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Tesis\Models\Role;
+use Tesis\Models\User;
 
 class UserSeeder extends Seeder
 {
+    const FAKES_USERS = 200;
+    const USER_ROLE   = 2;
     /**
-     * Run the database seeds.
-     *
-     * @return void
+     * bcrypt = funcion para encriptar contraseñas, equivalente a Hash::make
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'email'     =>  'admin@admin.com',
-            'password'  =>  bcrypt('admin'),
-            'name'      =>  'Administrador',
-            'lastname'  =>  null,
-            'gender'    =>  1,
-            'birthday'  =>  '1991-01-11',
-            'phone'     =>  null,
-            'mobil'     =>  null,
-            'created_at'    => date("Y-m-d H:i:s")
-        ]);
+        $rolAgricultor = Role::findOrFail(self::USER_ROLE);
 
-        DB::table('users')->insert([
-            'email'     =>  'agricultor@agricultor.com',
-            'password'  =>  bcrypt('agricultor'),
-            'name'      =>  'Agricultor',
-            'lastname'  =>  null,
-            'gender'    =>  1,
-            'birthday'  =>  '1991-01-11',
-            'phone'     =>  null,
-            'mobil'     =>  null,
-            'created_at'    => date("Y-m-d H:i:s")
-        ]);
+        for ($i = 0; $i < self::FAKES_USERS; $i++) {
+            $user = factory(User::class)->create();
+            $user->attachRole($rolAgricultor);
+        }
     }
 }

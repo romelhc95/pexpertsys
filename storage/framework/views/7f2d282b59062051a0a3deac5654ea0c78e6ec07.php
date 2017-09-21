@@ -14,6 +14,10 @@
             </a>
         </li>
         <li>
+            
+            <a href="<?php echo e(route('admin::enfermedades::image', Hashids::encode($enfermedad->id))); ?>"><i class="fa fa-eye"></i> Ver Detalle</a>
+        </li>
+        <li>
             <a href="<?php echo e(route('admin::enfermedades::edit', Hashids::encode($enfermedad->id))); ?>">
             <i class="fa fa-pencil"></i> Editar</a>
         </li>
