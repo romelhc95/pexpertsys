@@ -2,48 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="200062b3-2fa0-489d-9ea0-66cb09f65fb5" name="pexpertsys actually" comment="project running" />
-    <list default="true" id="bb155dfc-9968-4086-b974-0570277190ca" name="Default" comment="Muestra el diagnostico con plaga, descripción y soluciones.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/disease/image.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2017_02_12_054153_entrust_setup_tables.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2017_02_25_075315_create_steps_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/seeds/StepSeeder.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3efe221c-341a-4bba-a54f-a39e5f8c017f.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/3efe221c-341a-4bba-a54f-a39e5f8c017f.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/diagnostico.iml" afterPath="$PROJECT_DIR$/.idea/diagnostico.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="bb155dfc-9968-4086-b974-0570277190ca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DiseaseController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DiseaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SymptomController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SymptomController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/DiseaseRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/DiseaseRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/PlantRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/PlantRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Disease.php" afterPath="$PROJECT_DIR$/app/Models/Disease.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Plant.php" afterPath="$PROJECT_DIR$/app/Models/Plant.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_02_25_235009_crear_table_diseases.php" afterPath="$PROJECT_DIR$/database/migrations/2017_02_25_235009_crear_table_diseases.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_08_04_071854_create_solu_diseas_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_08_04_071854_create_solu_diseas_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DiseaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DiseaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/SoluDiseaSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/SoluDiseaSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/es/messages.php" afterPath="$PROJECT_DIR$/resources/lang/es/messages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/disease/_form.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/disease/_form.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/disease/boton.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/disease/boton.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/disease/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/disease/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/plant/_form.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/plant/_form.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/plant/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/plant/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/solution/result.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/solution/result.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/symptom/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/symptom/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/layoutadmin.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/layoutadmin.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/09b5a9933afe66f06103162e50f58146080ecba5.php" afterPath="$PROJECT_DIR$/storage/framework/views/09b5a9933afe66f06103162e50f58146080ecba5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/2f4ded18ebf8a71eca038779566ca6a9320bd755.php" afterPath="$PROJECT_DIR$/storage/framework/views/2f4ded18ebf8a71eca038779566ca6a9320bd755.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/34d36b09eae317571249fec8ed7d492c44b65eb9.php" afterPath="$PROJECT_DIR$/storage/framework/views/34d36b09eae317571249fec8ed7d492c44b65eb9.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/7c24e1e6ae68286abe401ad560754b1145db86d4.php" afterPath="$PROJECT_DIR$/storage/framework/views/7c24e1e6ae68286abe401ad560754b1145db86d4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/7f2d282b59062051a0a3deac5654ea0c78e6ec07.php" afterPath="$PROJECT_DIR$/storage/framework/views/7f2d282b59062051a0a3deac5654ea0c78e6ec07.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/b9d9a52f1403c8ef127937eeb2ba805eb37ea05f.php" afterPath="$PROJECT_DIR$/storage/framework/views/b9d9a52f1403c8ef127937eeb2ba805eb37ea05f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1026,7 +986,7 @@
       <workItem from="1505700930351" duration="499000" />
       <workItem from="1505701576088" duration="1099000" />
       <workItem from="1505755927438" duration="52000" />
-      <workItem from="1505783326107" duration="40005000" />
+      <workItem from="1505783326107" duration="40124000" />
     </task>
     <task id="LOCAL-00001" summary="Readme Actualizado">
       <created>1503862612407</created>
@@ -1070,7 +1030,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505057546882</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Intentando agregar imagen y Llenado de base de datos.">
+      <created>1505983680865</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1505983680865</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1106,7 +1073,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="471366000" />
+    <option name="totallyTimeSpent" value="471485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1207,7 +1174,8 @@
     <MESSAGE value="Mejoras aqui esta listar solucion en controlador DiagnosticController" />
     <MESSAGE value="worspace.xml" />
     <MESSAGE value="Muestra el diagnostico con plaga, descripción y soluciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Muestra el diagnostico con plaga, descripción y soluciones." />
+    <MESSAGE value="Intentando agregar imagen y Llenado de base de datos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Intentando agregar imagen y Llenado de base de datos." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
