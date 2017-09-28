@@ -21,6 +21,7 @@ class UserController extends Controller
     {
 //        $states   = State::pluck('name', 'id')->toArray();
 //        $usuarios = User::with('state', 'diagnostics')
+//        $user = User::all();
             $usuarios = User::with( 'diagnostics')
             ->whereNotIn('id', [1])
             ->orderBy('created_at', 'desc')

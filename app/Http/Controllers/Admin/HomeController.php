@@ -27,6 +27,7 @@ class HomeController extends Controller
         $countDiagnostic = Diagnostic::count();
         $countSolution = Solution::count();
         $countPlant = Plant::count();
+        $countUsers  = User::count();
         $lastRegistered  = User::orderBy('created_at', 'desc')->take(9)->get();
 
         return view('admin.home')
@@ -35,6 +36,7 @@ class HomeController extends Controller
             ->with('countDiseases', $countDiseases)
             ->with('countSolution', $countSolution)
             ->with('countPlant', $countPlant)
+            ->with('countUsers', $countUsers)
             ->with('lastRegistered', $lastRegistered);
     }
 

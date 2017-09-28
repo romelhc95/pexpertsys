@@ -26,17 +26,27 @@ class PlantController extends Controller
      * @param PlantRequest $request
      * @return \Illuminate\Http\RedirectResponse
      */
+//    private $total = 1;
+
     public function store(PlantRequest $request)
     {
         $plant = new Plant;
+        $total = 1;
         $length = $plant->number=$request->number;
-//        dd($plant);
-        for ($i=0; $i<=$length; $i++) {
-            $i->save();
-//            dd($i);
+        for($i=0; $i<=$length; $i++){
+            $total = $total + $length[$i];
+            $total->save();
         }
-//        alert('Las plantas fueron registradas correctamente');
-//        return redirect('admin/plantas/listar');
+
+//        $length = $plant->number=$request->number;
+//        dd($length);
+//        for ($i=1; $i<=$length; $i++) {
+////            $i->save();
+//            dd($length);
+//        }
+//
+        alert('Las plantas fueron registradas correctamente');
+        return redirect('admin/plantas/listar');
 //        $i->save();
 //        $plant->number = $request->number;
 //        Plant::create($request->all());

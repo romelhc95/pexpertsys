@@ -4,6 +4,11 @@
 @section('content')
 <ul class="timeline">
     {{-- timeline time label --}}
+    <li class="time-label">
+        <span class="bg-red">
+            Se encuentran {!! $diagnosticos->total() !!} registros de diagnosticos realizados
+        </span>
+    </li>
     @foreach ($diagnosticos as $diagnostico)
     <li class="time-label">
         <span class="bg-red">
@@ -24,4 +29,5 @@
     @endforeach
     {{-- END timeline item --}}
 </ul>
+    {!! $diagnosticos->render() !!}
 @stop

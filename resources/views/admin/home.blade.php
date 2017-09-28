@@ -4,24 +4,24 @@
 @section('content')
     <div class="row">
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-            <div class="small-box bg-teal">
+            <div class="small-box bg-purple">
                 <div class="inner">
-                    <h3>{{ $countDiagnostic }}</h3>
-                    <p>{{ trans('messages.label.diagnostics') }}</p>
+                    <h3>{{ $countUsers }}</h3>
+                    <p>{{ trans('messages.label.users') }}</p>
                 </div>
                 <div class="icon">
-                    <i class="fa fa-user-md"></i>
+                    <i class="fa fa-user"></i>
                 </div>
-                <a href="{{ route('admin::diagnosticos::index') }}" class="small-box-footer">
+                <a href="{{ route('admin::usuarios::create') }}" class="small-box-footer">
                     {{ trans('messages.label.more_info') }} <i class="fa fa-arrow-circle-right"></i>
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="small-box bg-red">
                 <div class="inner">
                     <h3>{{ $countDiseases }}</h3>
-                    <p>{{ trans('messages.label.diseases') }}</p>
+                    <p>Plaga y enfermedad</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-heartbeat"></i>
@@ -45,7 +45,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="small-box bg-blue">
                 <div class="inner">
                     <h3>{{ $countSolution }}</h3>
@@ -60,7 +60,21 @@
             </div>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
-            <div class="small-box bg-green">
+            <div class="small-box bg-orange">
+                <div class="inner">
+                    <h3>{{ $countDiagnostic }}</h3>
+                    <p>{{ trans('messages.label.diagnostics') }}</p>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user-md"></i>
+                </div>
+                <a href="{{ route('admin::diagnosticos::index') }}" class="small-box-footer">
+                    {{ trans('messages.label.more_info') }} <i class="fa fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="small-box bg-olive">
                 <div class="inner">
                     {{--<h3>{{ $countPlant }}</h3>--}}
                     <h3>0</h3>

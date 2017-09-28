@@ -19,7 +19,7 @@ class DiagnosticController extends Controller
 
     public function index()
     {
-        $diagnosticos = Diagnostic::orderBy('id','desc')->where('user_id', auth()->id())->paginate(20);
+        $diagnosticos = Diagnostic::orderBy('created_at','desc')->where('user_id', auth()->id())->paginate(20);
 
         return view('user.diagnostic.index')->with('diagnosticos', $diagnosticos);
     }

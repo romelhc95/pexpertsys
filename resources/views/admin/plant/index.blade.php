@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="box-body">
-                    {!! Form::open(['url'=>'admin/plantas/listar', 'method'=>'POST']) !!}
+                    {!! Form::open(['route'=>'admin::plantas::store']) !!}
                     @include('admin.plant._form', ['buttonText' => 'Guardar', 'color' => 'success'])
                     {!! Form::close() !!}
                 </div>

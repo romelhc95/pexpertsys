@@ -11,12 +11,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(['prefix' => 'api', 'as' => 'api::'], function () {
         Route::get('/all-diseases', 'Admin\ReportController@all_diseases');
         Route::get('/two-top', 'Admin\ReportController@top_two_diagnostic');
-        Route::get('/diagnostics-by-state', 'Admin\ReportController@diagnostics_by_state');
-        Route::get('/users-by-state', 'Admin\ReportController@users_by_state');
+//        Route::get('/diagnostics-by-state', 'Admin\ReportController@diagnostics_by_state');
+//        Route::get('/users-by-state', 'Admin\ReportController@users_by_state');
         Route::get('/top-users-diagnostics', 'Admin\ReportController@top_users_diagnostics');
         Route::get('/top-diseases-diagnostics', 'Admin\ReportController@top_diseases_diagnostics');
         Route::get('/anual-disease-diagnostics/{disease_id}', 'Admin\ReportController@anual_disease_diagnostics');
-        Route::get('/anual-state-diagnostics/{state_id}', 'Admin\ReportController@anual_state_diagnostics');
+//        Route::get('/anual-state-diagnostics/{state_id}', 'Admin\ReportController@anual_state_diagnostics');
         Route::get('/user-diseases', 'User\ReportController@user_diseases');
     });
 

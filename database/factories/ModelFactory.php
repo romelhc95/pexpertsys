@@ -2,8 +2,8 @@
 
 $factory->define(Tesis\Models\Diagnostic::class, function ($faker) {
 //    $fakeDate = $faker->dateTimeThisYear();
-//    $fakeDate = $faker->dateTimeBetween($startDate = '2017-04-13 00:00:00', $endDate = 'now', $timezone = date_default_timezone_get());
-    $fakeDate = $faker->dateTimeBetween($startDate = '2017-09-15 00:00:00', $endDate = 'now', $timezone = date_default_timezone_get());
+    $fakeDate = $faker->dateTimeBetween($startDate = '2017-06-13 00:00:00', $endDate = 'now', $timezone = date_default_timezone_get());
+//    $fakeDate = $faker->dateTimeBetween($startDate = '2017-09-15 00:00:00', $endDate = 'now', $timezone = date_default_timezone_get());
     return [
         'user_id'    => $faker->numberBetween(3, 200),
 //        'user_id'    => 2,

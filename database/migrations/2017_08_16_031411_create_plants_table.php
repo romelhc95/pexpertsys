@@ -12,7 +12,7 @@ class CreatePlantsTable extends Migration
     {
         Schema::create('plants', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('code');
+            $table->integer('number');
             $table->string('area');
             $table->string('sector');
             $table->timestamps();
