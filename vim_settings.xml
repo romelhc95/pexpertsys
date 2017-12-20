@@ -3,9 +3,10 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1513740295277">
+      <file name="/Dummy.txt" timestamp="1513745776868">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$APPLICATION_CONFIG_DIR$/Composer Log/Composer Log" timestamp="1513746021917" />
       <file name="C:/laragon/www/pexpertsys/.gitignore" timestamp="1513738043049" />
       <file name="C:/laragon/www/pexpertsys/.env" timestamp="1513741542947">
         <mark key="[" line="7" column="14" />
@@ -17,6 +18,13 @@
         <mark key="[" line="53" column="13" />
         <mark key="]" line="49" column="9" />
         <mark key="." line="49" column="9" />
+      </file>
+      <file name="C:/laragon/www/pexpertsys/.travis.yml" timestamp="1513744940936" />
+      <file name="C:/laragon/www/pexpertsys/config/app.php" timestamp="1513745490782">
+        <mark key="[" line="78" column="65" />
+        <mark key="]" line="79" column="0" />
+        <mark key="^" line="79" column="0" />
+        <mark key="." line="79" column="0" />
       </file>
     </filemarks>
     <jumps />
@@ -39,14 +47,17 @@
       <history-input />
     </history>
     <shortcut-conflicts>
-      <shortcut-conflict owner="vim">
+      <shortcut-conflict owner="ide">
         <text>ctrl pressed V</text>
       </shortcut-conflict>
       <shortcut-conflict owner="ide">
         <text>ctrl pressed S</text>
       </shortcut-conflict>
-      <shortcut-conflict owner="vim">
+      <shortcut-conflict owner="ide">
         <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed F</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
