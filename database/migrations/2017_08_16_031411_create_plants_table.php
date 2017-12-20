@@ -12,11 +12,15 @@ class CreatePlantsTable extends Migration
     {
         Schema::create('plants', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('number');
-            $table->string('area');
-            $table->string('sector');
+            $table->integer('codeplant');
+            $table->string('area')->nullable();
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
+        });
+
+        Schema::table('plants', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

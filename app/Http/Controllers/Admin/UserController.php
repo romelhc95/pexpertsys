@@ -102,6 +102,10 @@ class UserController extends Controller
         return redirect()->back();
     }
 
+    /**
+     * @param SearchRequest $request
+     * @return $this|\Illuminate\Http\RedirectResponse
+     */
     public function search(SearchRequest $request)
     {
         if (!$request->has('search')) {
@@ -109,7 +113,7 @@ class UserController extends Controller
         }
 
 //        $usuarios = User::search($request->search)->with('state', 'diagnostics')->get();
-        $usuarios = User::search($request->search)->with('name', 'diagnostics')->get();
+        $usuarios = User::search($request->search)->with('state', 'diagnostics')->get();
 
         return view('admin.user.result')->with('usuarios', $usuarios);
     }

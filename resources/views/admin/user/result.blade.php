@@ -20,7 +20,7 @@
                                 <th>Datos</th>
                                 <th>Correo</th>
                                 <th>Género</th>
-                                <th>Departamento</th>
+                                {{--<th>Departamento</th>--}}
                                 <th>Nacimiento</th>
                                 <th>Teléfono</th>
                                 <th>Celular</th>
@@ -43,7 +43,7 @@
                                     <td>{{ $usuario->name }} {{ $usuario->lastname }}</td>
                                     <td>{{ $usuario->email }}</td>
                                     <td>{{ $usuario->getGender() }}</td>
-                                    <td>{{ $usuario->state->name or 'No Registrado' }}</td>
+                                    {{--<td>{{ $usuario->state->name or 'No Registrado' }}</td>--}}
                                     <td>{{ isset($usuario->birthday) ? $usuario->birthday->format('d/m/Y') : '--' }}</td>
                                     <td>{{ $usuario->phone }}</td>
                                     <td>{{ $usuario->mobil }}</td>

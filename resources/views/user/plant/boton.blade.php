@@ -4,14 +4,15 @@
     </button>
     <ul class="dropdown-menu" role="menu">
         <li>
-            <a href="{{ route('admin::plantas::edit', Hashids::encode($plant->id)) }}">
+            <a href="{{ route('user::plantas::edit', Hashids::encode($plant->id)) }}">
             <i class="fa fa-pencil"></i> Editar</a>
         </li>
         <li>
             <a href="" data-toggle="modal" data-target="#deleteModal"
-                data-title="{{ $plant->code }} ({{ $plant->area }})" data-content="la planta"
-                data-route="{{ route('admin::plantas::delete', Hashids::encode($plant->id)) }}">
-            <i class="fa fa-times"></i> Eliminar</a>
+               data-title="{{ $plant->name }}" data-content="la planta"
+               data-route="{{ route('user::plantas::delete', Hashids::encode($plant->id)) }}">
+                <i class="fa fa-times"></i> Eliminar
+            </a>
         </li>
     </ul>
 </div>

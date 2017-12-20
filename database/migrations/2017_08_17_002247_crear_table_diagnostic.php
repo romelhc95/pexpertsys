@@ -16,14 +16,17 @@ class CrearTableDiagnostic extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('disease_id')->unsigned();
+            $table->integer('plant_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
         });
 
-        Schema::table('diagnostics', function (Blueprint $table) {
+        Schema::table('diagnostics', function (Blueprint $table){
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('disease_id')->references('id')->on('diseases')->onDelete('cascade');
+            $table->foreign('plant_id')->references('id')->on('plants')->onDelete('cascade');
         });
+
     }
 
     /**

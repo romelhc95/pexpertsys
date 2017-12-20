@@ -23,7 +23,7 @@
                     ]) !!}
                     {!! Form::hidden('edit_boolean', 1) !!}
                     {!! Form::submit('Actualizar', ['class' => 'btn btn-warning']) !!}
-                    {!! Form::submit('Cerrar', ['class' => 'btn btn-danger', 'onClick' => 'history.back();']) !!}
+                    {!! Form::Button('Cerrar', ['class' => "btn btn-danger", 'onClick' => "history.back()"]) !!}
                 {!! Form::close() !!}
             </div>
         </div>

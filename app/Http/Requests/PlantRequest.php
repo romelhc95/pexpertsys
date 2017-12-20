@@ -8,7 +8,7 @@ class PlantRequest extends Request
 {
     public function authorize()
     {
-//        return auth()->user()->hasRole('admin') ? true : abort(403);
+//        return auth()->user()->hasRole('user') ? true : abort(403);
         return true;
     }
 
@@ -16,19 +16,19 @@ class PlantRequest extends Request
     {
         if($this->input('edit_boolean') == 1){
             return[
-                'number' =>'require|between:1,255',
+                'codeplant' =>'require|between:1,255',
             ];
         }
         return[
-            'number' => 'required|between:1,255|unique:plants',
+            'codeplant' => 'required|between:1,255',
         ];
     }
 
     public function messages()
     {
         return[
-            'number.required' => 'El numbero es obligatorio',
-            'number.between' => 'El numbero entre :min y :max caracteres',
+            'codeplant.required' => 'El numbero es obligatorio',
+            'codeplant.between' => 'El numbero entre :min y :max caracteres',
 //            'number.unique' => 'El numbero ingresado ya se encuentra registrado',
         ];
     }

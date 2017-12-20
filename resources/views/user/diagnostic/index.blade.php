@@ -6,7 +6,11 @@
     {{-- timeline time label --}}
     <li class="time-label">
         <span class="bg-red">
-            Se encuentran {!! $diagnosticos->total() !!} registros de diagnosticos realizados
+            @if($diagnosticos->total() < 2)
+                Se encuentra {!! $diagnosticos->total() !!} registro del diagnóstico realizado.
+                @else
+                Se encuentran {!! $diagnosticos->total() !!} registros de diagnósticos realizados.
+            @endif
         </span>
     </li>
     @foreach ($diagnosticos as $diagnostico)

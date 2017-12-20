@@ -2,14 +2,11 @@
 
 namespace Tesis\Http\Controllers\Admin;
 
-use Nicolaslopezj\Searchable\SearchableTrait;
 use Tesis\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Tesis\Http\Requests\SearchRequest;
 use Tesis\Http\Requests\SolutionRequest;
-use Tesis\Models\Disease;
 use Tesis\Models\Solution;
-use Tesis\Models\Step;
 use Tesis\Traits\HashTrait;
 
 class SolutionController extends Controller
@@ -100,7 +97,7 @@ class SolutionController extends Controller
 
         $solution = Solution::findOrFail($id);
 
-        if ($solution->soludiseas->count() > 0){
+        if ($solution->solu_diseas->count() > 0){
             alert('No se puede eliminar una solución con enfermedad', 'danger');
             return redirect()->back();
         }

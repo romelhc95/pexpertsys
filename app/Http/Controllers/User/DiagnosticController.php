@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Tesis\Http\Controllers\Controller;
 use Tesis\Models\Diagnostic;
 use Tesis\Models\Disease;
+use Tesis\Models\Plant;
 use Tesis\Models\Rule;
 use Tesis\Models\SoluDisea;
 use Tesis\Models\Step;
@@ -41,18 +42,23 @@ class DiagnosticController extends Controller
             $request->session()->forget('session_sintomas');
         }
 
+        $plants   = Plant::pluck('codeplant', 'id')->toArray();
         //$sintomas = Symptom::orderBy('name', 'asc')->lists('name', 'id')->toArray();
         $sintomas = DB::table('symptoms')->orderBy('name', 'asc')->pluck('name', 'id')->toArray();
 
-        return view('user.diagnostic.create')->with('sintomas', $sintomas);
+        return view('user.diagnostic.create')
+            ->with('plants', $plants)
+            ->with('sintomas', $sintomas);
     }
 
     public function analyze(Request $request)
     {
         if ($request->isMethod('post')) {
             $this->validate($request, [
+                'plant' => 'required',
                 'sintoma' => 'required',
             ], [
+                'plant.required' => 'Debe seleccionar el numero de la planta para continuar',
                 'sintoma.required' => 'Debe seleccionar un síntoma para continuar',
             ]);
 
@@ -120,7 +126,7 @@ class DiagnosticController extends Controller
                 // tomamos el primer elemento del primer elemento de la coleccion
                 // (está ordenado por id_sintoma)
                 $diseaseKey   = $ruleNumber->first()->first()->disease_id;
-                $diagnosticId = $this->generateDiagnostic($diseaseKey, $request->user()->id);
+                $diagnosticId = $this->generateDiagnostic($diseaseKey, $request->user()->id, $request->plant_id);
 
                 $request->session()->forget('session_sintomas');
 
@@ -157,16 +163,24 @@ class DiagnosticController extends Controller
             $showSymptoms[$tempSymptom->id] = $tempSymptom->name;
         }
 
+        $plants   = Plant::pluck('codeplant', 'id')->toArray();
+
+//        $diagnostic = new Diagnostic();
+//        $diagnostic->plant_id = $request->plant_id;
+//        $diagnostic->save();
+
         return view('user.diagnostic.create')
+            ->with('plants', $plants)
             ->with('showSymptoms', $showSymptoms)
             ->with('sintomas', $symptomsForSelect);
     }
 
-    private function generateDiagnostic($diseaseKey, $userId)
+    private function generateDiagnostic($diseaseKey, $userId, $plantId)
     {
         $diagnostic             = new Diagnostic();
         $diagnostic->disease_id = $diseaseKey;
         $diagnostic->user_id    = $userId;
+        $diagnostic->plant_id    = $plantId;
         $diagnostic->save();
 
         return $diagnostic->id;

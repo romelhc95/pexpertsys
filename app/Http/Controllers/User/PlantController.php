@@ -1,11 +1,10 @@
 <?php
 
-namespace Tesis\Http\Controllers\Admin;
+namespace Tesis\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use Tesis\Http\Controllers\Controller;
 use Tesis\Http\Requests\PlantRequest;
-use Tesis\Http\Requests\SearchRequest;
 use Tesis\Models\Plant;
 use Tesis\Traits\HashTrait;
 
@@ -19,8 +18,8 @@ class PlantController extends Controller
      */
     public function create()
     {
-        $plants = Plant::with('user', 'diagnostics')->orderBy('created_at', 'desc')->paginate(10);
-        return view('admin.plant.index')->with('plants', $plants);
+        $plants = Plant::orderBy('created_at', 'desc')->where('user_id', auth()->id())->paginate(20);
+        return view('user.plant.index')->with('plants', $plants);
     }
 
     /**
@@ -30,7 +29,16 @@ class PlantController extends Controller
 
     public function store(PlantRequest $request)
     {
-        //
+        $total=$request->codeplant;
+        for($i=0; $i<$total; $i++) {
+            $plant = new Plant();
+            $plant->user_id = $request->user()->id;
+            $plant->codeplant = $i+1;
+            $plant->area = $request->area;
+            $plant->save();
+        }
+        alert('Las plantas fueron registradas correctamente');
+        return redirect('user/plantas/listar');
     }
 
     /**
@@ -42,7 +50,12 @@ class PlantController extends Controller
      */
     public function edit($hash_id)
     {
-        //
+        $id = $this->decode($hash_id);
+
+        $plant = Plant::findOrFail($id);
+
+        return view('user.plant.edit')->with('plant', $plant);
+
     }
 
     /**
@@ -64,19 +77,14 @@ class PlantController extends Controller
      * @return \Illuminate\Http\Response
      * @internal param int $id
      */
-    public function destroy($hash_id)
+    public function delete($hash_id)
     {
-        //
-    }
+        $id = $this->decode($hash_id);
 
-    public function search(SearchRequest $request)
-    {
-        if (!$request->has('search')){
-            return redirect()->route('admin::plantas::create');
-        }
+        $plant = Plant::findOrFail($id);
+        $plant->delete();
 
-        $plants = Plant::search($request->search)->orderBy('created_at', 'id')->with('user')->paginate(20);
-
-        return view('admin.plant.result')->with('plants', $plants);
+        flash('<i class="fa fa-trash" aria-hidden="true"></i><span> La planta fue eliminada correctamente.</span>')->error();
+        return redirect()->back();
     }
 }

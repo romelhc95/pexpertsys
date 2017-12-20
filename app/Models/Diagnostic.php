@@ -41,6 +41,7 @@ class Diagnostic extends Model
         'joins'   => [
             'diseases' => ['diagnostics.disease_id', 'diseases.id'],
             'users'    => ['diagnostics.user_id', 'users.id'],
+            'plants'    => ['diagnostics.plant_id', 'plants.id'],
         ],
     ];
 
@@ -52,5 +53,10 @@ class Diagnostic extends Model
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function plant()
+    {
+        return $this->belongsTo(Plant::class, 'plant_id');
     }
 }

@@ -11,7 +11,7 @@
             <div class="box-body">
                 {!! Form::open() !!}
                 <meta name="csrf-token" content="{{ csrf_token() }}">
-                    @include('admin.plant._formedit', [
+                    @include('user.plant._formedit', [
                         'buttonText' => 'Actualizar',
                         'color' => 'warning',
                         'plant' => $plant,

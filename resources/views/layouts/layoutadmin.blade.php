@@ -10,9 +10,9 @@
         {{--<link rel="stylesheet" href="{{ elixir('css/all.css') }}">--}}
         {{--{{ Html::style('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css') }}--}}
         {{--{{ Html::style('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-reboot.min.css') }}--}}
-        {!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css') !!}
-        {{ Html::style('css/all.css') }}
-        {{ Html::style('css/font-awesome.css') }}
+        {!! Html::style('//cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css') !!}
+        {{ Html::style('/css/all.css') }}
+        {{ Html::style('/css/font-awesome.css') }}
 
         {{-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --}}
         {{-- WARNING: Respond.js doesn't work if you view the page via file:// --}}
@@ -20,8 +20,8 @@
 
         <!--script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script-->
-        {{ Html::script('js/html5shiv.min.js') }}
-        {{ Html::script('js/respond.min.js') }}
+        {{ Html::script('/js/html5shiv.min.js') }}
+        {{ Html::script('/js/respond.min.js') }}
         <![endif]-->
     </head>
 
@@ -184,9 +184,9 @@
         {{--<script src="{{ asset('build/js/morris.min.js') }}"></script>--}}
         {{--<script src="{{ asset('build/js/graphs.js') }}"></script>--}}
 
-        {{ Html::script('js/all.js') }}
-        {{ Html::script('build/js/morris.min.js') }}
-        {{ Html::script('build/js/graphs.js') }}
+        {{ Html::script('/js/all.js') }}
+        {{ Html::script('/build/js/morris.min.js') }}
+        {{ Html::script('/build/js/graphs.js') }}
         {{--{{ Html::script('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js') }}--}}
         <script>
             $(document).ready(function() {

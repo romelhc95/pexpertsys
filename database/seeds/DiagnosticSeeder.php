@@ -10,8 +10,8 @@ class DiagnosticSeeder extends Seeder
      *
      * @return void
      */
-    const FAKES_DIAGNOSTIC = 500;
-//    const FAKES_DIAGNOSTIC = 40;
+//    const FAKES_DIAGNOSTIC = 500;
+    const FAKES_DIAGNOSTIC = 40;
     public function run()
     {
         factory(Diagnostic::class, self::FAKES_DIAGNOSTIC)->create();

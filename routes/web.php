@@ -127,6 +127,15 @@ Route::group(['middleware' => 'auth'], function () {
         Route::post('/actualizar-perfil', ['as' => 'perfil::actualizar', 'uses' => 'User\HomeController@profile_update']);
         Route::post('/actualizar-password', ['as' => 'password::actualizar', 'uses' => 'User\HomeController@password_update']);
 
+        Route::group(['prefix' => 'plantas', 'as' => 'plantas::'], function () {
+            Route::get('/listar', ['as' => 'create', 'uses' => 'User\PlantController@create']);
+            Route::post('/listar', ['as' => 'store', 'uses' => 'User\PlantController@store']);
+            Route::get('/buscar', ['as' => 'buscar', 'uses' => 'User\PlantController@search']);
+            Route::get('/editar/{id}', ['as' => 'edit', 'uses' => 'User\PlantController@edit']);
+            Route::post('/editar/{id}', ['as' => 'update', 'uses' => 'User\PlantController@update']);
+            Route::post('/eliminar/{id}', ['as' => 'delete', 'uses' => 'User\PlantController@delete']);
+        });
+
         Route::group(['prefix' => 'diagnosticos', 'as' => 'diagnosticos::'], function () {
             Route::get('/nuevo', ['as' => 'create', 'uses' => 'User\DiagnosticController@create']);
             Route::post('/nuevo', 'User\DiagnosticController@create');
