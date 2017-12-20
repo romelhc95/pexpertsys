@@ -2,7 +2,8 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping ext="vue" type="HTML" />
-      <removed_mapping ext="vue" approved="true" type="Vue.js" />
+      <mapping pattern="Procfile" type="PLAIN_TEXT" />
+      <removed_mapping ext="vue" type="Vue.js" />
     </extensionMap>
   </component>
 </application>
