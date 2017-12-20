@@ -6,7 +6,7 @@
     <div class="col-md-12">
         <div class="box box-success box-solid {!! count($errors) > 0 ? '' : 'collapsed-box' !!}">
             <div class="box-header with-border">
-                <h3 class="box-title"><strong>Nueva Enfermedad</strong></h3>
+                <h3 class="box-title"><strong>{{ trans('messages.label.disease.new') }}</strong></h3>
                 <div class="box-tools pull-right">
                     <button class="btn btn-box-tool" data-widget="collapse">
                         @if (count($errors) > 0)
@@ -29,7 +29,7 @@
     <div class="col-md-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title"><strong>Listado de Enfermedades</strong></h3>
+                <h3 class="box-title"><strong>{{ trans('messages.label.disease.list') }}</strong></h3>
             </div>
             @include('flash::message')
             <div class="box-body">

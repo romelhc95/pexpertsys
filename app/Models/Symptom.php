@@ -24,6 +24,7 @@ class Symptom extends Model
 
     /**
      * Mutators
+     * @param $name
      */
     public function setNameAttribute($name)
     {

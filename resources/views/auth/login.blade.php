@@ -4,22 +4,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>PExpertSys</title>
-        {{-- Tell the browser to be responsive to screen width --}}
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        {{-- Compiled scripts --}}
-        <!--link rel="stylesheet" href="{!-- elixir('css/all.css') !!}"-->
-        <!--link rel="stylesheet" href="css/all.css"-->
-        {{ Html::style('css/all.css') }}
-        {{ Html::style('css/font-awesome.css') }}
-
-        {{-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --}}
-            {{-- WARNING: Respond.js doesn't work if you view the page via file:// --}}
-            <!--[if lt IE 9]>
-        <!--script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script-->
-        {{ Html::script('js/html5shiv.min.js') }}
-        {{ Html::script('js/respond.min.js') }}
-        <![endif]-->
+        {{--{{ Html::style('/css/all.css') }}--}}
+        <link rel="stylesheet" href="css/all.css">
+{{--        {{ Html::style('https://660d57a7.ngrok.io/css/font-awesome.css') }}--}}
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script src="js/html5shiv.min.js"></script>
+{{--        {{ Html::script('https://660d57a7.ngrok.io/js/html5shiv.min.js') }}--}}
+        <script src="js/respond.min.js"></script>
+{{--        {{ Html::script('https://660d57a7.ngrok.io/js/respond.min.js') }}--}}
     </head>
     <body class="hold-transition login-page">
         <div class="login-box">
@@ -29,11 +22,8 @@
             <div class="login-box-body">
                 <p class="login-box-msg">{{ trans('messages.login.welcome') }}</p>
                 @include('flash::message')
-                {{--<form method="POST" action="{{ route('login') }}">--}}
-                {{--<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />--}}
                 {!! Form::open(['route'=>'login', 'method'=>'POST']) !!}
                     {{ csrf_field() }}
-                {{--{!! Alert::render() !!}--}}
                     <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">
                         <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="{{ trans('messages.form.email') }}" required autofocus>
                         <span class="fa fa-envelope form-control-feedback"></span>
@@ -72,6 +62,7 @@
 
         {{-- Compiled scripts --}}
         <!--script src="{!-- elixir('js/all-5d56b1e1bd.js') --}"></script-->
-        {{ Html::script('js/all.js') }}
+        <script src="js/all.js"></script>
+{{--        {{ Html::script('/js/all.js') }}--}}
     </body>
 </html>

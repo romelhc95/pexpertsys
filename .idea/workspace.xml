@@ -2,30 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="200062b3-2fa0-489d-9ea0-66cb09f65fb5" name="pexpertsys actually" comment="project running" />
-    <list default="true" id="bb155dfc-9968-4086-b974-0570277190ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.phpstorm.meta.php" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ide_helper.php" afterPath="$PROJECT_DIR$/_ide_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_08_16_031411_create_plants_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_08_16_031411_create_plants_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DiagnosticSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DiagnosticSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DiseaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DiseaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/RuleSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/RuleSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/SoluDiseaSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/SoluDiseaSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/SolutionSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/SolutionSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/SymptomSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/SymptomSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/plant/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/plant/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/7c24e1e6ae68286abe401ad560754b1145db86d4.php" afterPath="$PROJECT_DIR$/storage/framework/views/7c24e1e6ae68286abe401ad560754b1145db86d4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
+    <list default="true" id="bb155dfc-9968-4086-b974-0570277190ca" name="Default" comment="Complete+-">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.vagrant/machines/pexpertsys/virtualbox/action_provision" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.vagrant/machines/pexpertsys/virtualbox/action_set_name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.vagrant/machines/pexpertsys/virtualbox/creator_uid" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.vagrant/machines/pexpertsys/virtualbox/id" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.vagrant/machines/pexpertsys/virtualbox/index_uuid" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.vagrant/machines/pexpertsys/virtualbox/private_key" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.vagrant/machines/pexpertsys/virtualbox/synced_folders" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.vagrant/machines/pexpertsys/virtualbox/vagrant_cwd" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Vagrantfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/after.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/aliases" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/PlantController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/manifest.webapp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/nbproject/project.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/nbproject/project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/plant/result.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/plant/_form.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/plant/_formedit.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/plant/index.blade.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/diagnostico.iml" afterPath="$PROJECT_DIR$/.idea/diagnostico.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" afterPath="$PROJECT_DIR$/_ide_helper.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SolutionController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SolutionController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PlantRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/PlantRequest.php" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Diagnostic.php" afterPath="$PROJECT_DIR$/app/Models/Diagnostic.php" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Plant.php" afterPath="$PROJECT_DIR$/app/Models/Plant.php" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Symptom.php" afterPath="$PROJECT_DIR$/app/Models/Symptom.php" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" afterPath="$PROJECT_DIR$/app/Models/User.php" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" />
+      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change beforePath="$PROJECT_DIR$/config/debugbar.php" afterPath="$PROJECT_DIR$/config/debugbar.php" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2017_02_26_002247_crear_table_diagnostic.php" afterPath="$PROJECT_DIR$/database/migrations/2017_08_17_002247_crear_table_diagnostic.php" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2017_08_16_031411_create_plants_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_08_16_031411_create_plants_table.php" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DiagnosticSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DiagnosticSeeder.php" />
+      <change beforePath="$PROJECT_DIR$/public/css/all.css" afterPath="$PROJECT_DIR$/public/css/all.css" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/es/messages.php" afterPath="$PROJECT_DIR$/resources/lang/es/messages.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/disease/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/disease/index.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/plant/_form.blade.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/plant/_formedit.blade.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/plant/boton.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/plant/boton.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/plant/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/plant/edit.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/plant/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/plant/index.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/solution/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/solution/edit.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/symptom/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/symptom/edit.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/result.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/user/result.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layoutadmin.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/layoutadmin.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layoutuser.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/layoutuser.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/diagnostic/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/diagnostic/create.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/06642f46bd18aa717ad9b20b62459853782c342e.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/06e53f3ed4589212bd2df2e1dc1bda2c287b9377.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/07998eeeb7904fdc3b6406f02ccf8c86a7c5379e.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/09b5a9933afe66f06103162e50f58146080ecba5.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/2f4ded18ebf8a71eca038779566ca6a9320bd755.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/34d36b09eae317571249fec8ed7d492c44b65eb9.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/3cfe0d38f118582c09a796e1f6c6f33629ad93bd.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/480471727a7af265471857ce79eab06a972cc99b.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4d912f5bb8399ce7224c591f31169e37a1445baa.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/556fe15de40c8c1f78074d63445e8043b791f2b9.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5c05f37b8b787637b2938195057cea8a895960d5.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6599ff20d02694b0cfd9905aab31dedf6ea9b851.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7c24e1e6ae68286abe401ad560754b1145db86d4.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7e13d7f5b703ee9d374463157a9314ab5a01424f.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7f2d282b59062051a0a3deac5654ea0c78e6ec07.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/8bdba51b55f1ced31ed2fbaed2ec5f74f3d7ccef.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/8e0076409060e79ac91ff7b588f282f0ccaaf4ce.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/8f94ca55ab5a3c2bee51ad8b4da1b2a982df49b2.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ab0a95532eb2f0898fe9e7fe7953c3d969825840.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ac8327610e674a2d0bc2c16fba0e769d557621f6.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b97473c888bea0db4689401f2d2af08a8a1c07ad.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b9c41b33f6d28611b6f0b7714b62e4a977ff5ddb.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b9d9a52f1403c8ef127937eeb2ba805eb37ea05f.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/bc85a19ac2e30ed8f0aa9cc88c190e9a27084d61.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/cceb0ad34b0e4818fc1ccb74bb05142b1267290e.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/cfb234886eef9ec8852dbd199d6bfe460985a23a.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d8651b38ded7766b2b5d0dfdeda2ad87d1c77a19.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d904195a5d4042d94fd81ef6e232a9dba2141f4c.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e09f97eec7a16da0e1f535ac0303fc56dbdb12d0.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fc002dd60aff9786adb343700ff966d050448c32.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +105,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <executablePath>composer</executablePath>
   </component>
@@ -52,18 +123,18 @@
     <expand>
       <path>
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="pexpertsys_bd@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="pexpertsys_bd@127.0.0.1" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="pexpertsys_bd@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="pexpertsys_bd@127.0.0.1" type="e3449647:DbNodeDescriptor" />
         <item name="pexpertsys_bd" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="pexpertsys_bd@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="pexpertsys_bd@127.0.0.1" type="e3449647:DbNodeDescriptor" />
         <item name="pexpertsys_bd" type="e3449647:DbNodeDescriptor" />
-        <item name="diseases" type="e3449647:DbNodeDescriptor" />
+        <item name="plants" type="e3449647:DbNodeDescriptor" />
       </path>
     </expand>
     <select />
@@ -79,22 +150,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ModelFactory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
+      <file leaf-file-name="DiagnosticController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="138">
+              <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiagnosticSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/DiagnosticSeeder.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="23">
+              <caret line="11" column="80" lean-forward="false" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+              <folding>
+                <marker date="1511627131041" expanded="true" signature="856:1084" ph="..." />
+                <marker date="1511627131041" expanded="true" signature="885:1083" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,36 +177,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#18576E</find>
-      <find>#008000</find>
-      <find>nav</find>
-      <find>logo</find>
-      <find>#17546a</find>
-      <find>hola</find>
-      <find>users</find>
-      <find>edit</find>
-      <find>button</find>
-      <find>paciente</find>
-      <find>open</find>
-      <find>register</find>
-      <find>showLoginPost</find>
-      <find>validateRequire</find>
-      <find>border-color</find>
-      <find>080808</find>
-      <find>#134659</find>
-      <find>66afe9</find>
-      <find>#2e6da4</find>
-      <find>#337ab7</find>
-      <find>/Debugbar</find>
-      <find>Debugbar</find>
-      <find>show</find>
-      <find>;</find>
       <find>erwini</find>
       <find>plant</find>
       <find>'created_at'    =&gt; date(&quot;Y-m-d H:i:s&quot;)</find>
       <find>hojas cl</find>
       <find>suelos</find>
       <find>date(&quot;Y-m-d H:i:s&quot;)</find>
+      <find>debug</find>
+      <find>enabled</find>
+      <find>ssl</find>
+      <find>adm</find>
+      <find>admi</find>
+      <find>pla</find>
+      <find>plaga</find>
+      <find>disease</find>
+      <find>admin</find>
+      <find>generateDiagnostic</find>
+      <find>sintomas</find>
+      <find>$symptomsForSelect</find>
+      <find>show</find>
+      <find>create</find>
+      <find>insert</find>
+      <find>$userId</find>
+      <find>$diseaseKey</find>
+      <find>60013a9a2f1626b3d26058db700b2a340738d88a.php</find>
+      <find>code_plant</find>
+      <find>box-title</find>
+      <find>register</find>
+      <find>deleteModal</find>
+      <find>_modal</find>
+      <find>number</find>
     </findStrings>
     <replaceStrings>
       <replace>Route::get</replace>
@@ -147,6 +221,7 @@
       <replace>plant</replace>
       <replace>'created_at'    =&gt; date(&quot;2017-06-13 00:01:20&quot;)</replace>
       <replace>date(&quot;2017-06-13 00:01:20&quot;)</replace>
+      <replace>user</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -155,49 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/user/diagnostic/detail.blade.php" />
-        <option value="$PROJECT_DIR$/resources/lang/es/messages.php" />
-        <option value="$PROJECT_DIR$/app/Models/Plant.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/plant/_form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/symptom/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SymptomController.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_02_25_235009_crear_table_diseases.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_09_19_164017_add_column_extension_to_diseases.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/disease/boton.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/disease/image.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/solution/result.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/diagnostic/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/layoutadmin.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/disease/_form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/disease/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DiseaseController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Disease.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/DiseaseRequest.php" />
-        <option value="$PROJECT_DIR$/database/seeds/TypeSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/StepSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/RoleSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/RoleUserSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/Development/TruncateTablesSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/Development/StaffSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/Development/UserSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/Development/DiagnosticSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/Production/TruncateTablesSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/TruncateTablesSeeder.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_08_04_071854_create_solu_diseas_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/UserSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_08_16_031411_create_plants_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/plant/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/PlantRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
-        <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/database/seeds/SymptomSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/RuleSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/SolutionSeeder.php" />
@@ -205,7 +237,50 @@
         <option value="$PROJECT_DIR$/database/seeds/SoluDiseaSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/StaffSeeder.php" />
         <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
+        <option value="$PROJECT_DIR$/app/Models/Symptom.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Models/User.php" />
+        <option value="$PROJECT_DIR$/Homestead.yaml" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/layoutadmin.blade.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/solution/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/symptom/edit.blade.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1cb925b9-3623-4a70-a5e2-8fdd756d0de6/console.sql" />
+        <option value="$PROJECT_DIR$/resources/views/admin/disease/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/disease/_form.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_02_26_002247_crear_table_diagnostic.php" />
+        <option value="$PROJECT_DIR$/app/Models/Diagnostic.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/diagnostic/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/StateController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_17_002247_crear_table_diagnostic.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/plant/boton.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/plant/index.blade.php" />
+        <option value="$PROJECT_DIR$/storage/framework/views/3824ed2d145580823737033d69387bd09521617e.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_08_16_031411_create_plants_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SolutionController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Plant.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/user/result.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/PlantRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/User/PlantController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/plant/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/all.css" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php" />
+        <option value="$PROJECT_DIR$/resources/lang/es/messages.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/plant/result.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/plant/_form.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/plant/_formedit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/layoutuser.blade.php" />
+        <option value="$PROJECT_DIR$/manifest.webapp" />
+        <option value="$PROJECT_DIR$/config/debugbar.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php" />
         <option value="$PROJECT_DIR$/database/seeds/DiagnosticSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -230,6 +305,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/vinkla/hashids" />
@@ -316,10 +392,11 @@
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/laracasts/flash" />
+      <path value="$PROJECT_DIR$/vendor/laravel/homestead" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -357,8 +434,9 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ColorIdeProjectViewPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -372,6 +450,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ColorIdeProjectViewPane">
         <subPane>
           <expand>
@@ -422,266 +513,74 @@
               <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
               <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="factories" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
               <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="solution" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plant" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pexpertsys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pexpertsys" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Providers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Middleware" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diagnostico" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Auth" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -690,22 +589,25 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.1.1" />
     <property name="add_unversioned_files" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="login&#9;null&#9;null&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/UserController.php&#10;userpro&#9;null&#9;null&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/routes/web.php&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/user/diagnostic/show.blade.php&#10;plant&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/migrations/2017_08_16_031411_create_plants_table.php&#10;entrust&#9;null&#9;null&#10;entru&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/migrations/2017_02_12_054153_entrust_setup_tables.php&#10;entr&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/migrations/2017_09_21_010443_entrust_setup_tables.php&#10;composer&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/composer.json&#10;admin.&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/layouts/layoutadmin.blade.php&#10;result&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/solution/result.blade.php&#10;_modal&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/partials/_modal.blade.php&#10;resu&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/diagnostic/result.blade.php&#10;_se&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/partials/_search.blade.php&#10;disease&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/seeds/DiseaseSeeder.php&#10;dise&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/DiseaseController.php&#10;solut&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/SolutionController.php&#10;dia&#9;null&#9;null&#10;web.&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/routes/web.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/disease/index.blade.php&#10;add_&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/migrations/2017_09_19_164017_add_column_extension_to_diseases.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/disease/index.blade.php&#10;disea&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/DiseaseController.php&#10;seed&#9;null&#9;null&#10;di&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/DiseaseController.php&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/home.blade.php&#10;layo&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/layouts/layoutadmin.blade.php&#10;;&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="diagnos&#9;FILE&#9;file://C:/laragon/www/pexpertsys/app/Http/Controllers/User/DiagnosticController.php&#10;debu&#9;FILE&#9;file://C:/laragon/www/pexpertsys/config/debugbar.php&#10;web&#9;FILE&#9;file://C:/laragon/www/pexpertsys/routes/web.php&#10;en&#9;FILE&#9;file://C:/laragon/www/pexpertsys/.env&#10;app&#9;FILE&#9;file://C:/laragon/www/pexpertsys/config/app.php&#10;env&#9;FILE&#9;file://C:/laragon/www/pexpertsys/.env&#10;Symp&#9;null&#9;null&#10;login&#9;null&#9;null&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/UserController.php&#10;userpro&#9;null&#9;null&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/user/diagnostic/show.blade.php&#10;plant&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/migrations/2017_08_16_031411_create_plants_table.php&#10;entrust&#9;null&#9;null&#10;entru&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/migrations/2017_02_12_054153_entrust_setup_tables.php&#10;entr&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/migrations/2017_09_21_010443_entrust_setup_tables.php&#10;composer&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/composer.json&#10;admin.&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/layouts/layoutadmin.blade.php&#10;result&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/solution/result.blade.php&#10;_modal&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/partials/_modal.blade.php&#10;resu&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/diagnostic/result.blade.php&#10;_se&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/partials/_search.blade.php&#10;disease&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/seeds/DiseaseSeeder.php&#10;dise&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/DiseaseController.php&#10;solut&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/SolutionController.php&#10;dia&#9;null&#9;null&#10;web.&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/routes/web.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/disease/index.blade.php&#10;add_&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/database/migrations/2017_09_19_164017_add_column_extension_to_diseases.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/disease/index.blade.php&#10;disea&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/DiseaseController.php&#10;seed&#9;null&#9;null&#10;di&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/app/Http/Controllers/Admin/DiseaseController.php&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/admin/home.blade.php&#10;layo&#9;FILE&#9;file://C:/xampp/htdocs/pexpertsys/resources/views/layouts/layoutadmin.blade.php&#10;;&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/romelhc95/ecommerce.git" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\pexpertsys\resources\views\user\plant" />
       <recent name="C:\xampp\htdocs\pexpertsys\database\seeds" />
       <recent name="C:\xampp\htdocs\pexpertsys\database\seeds\Production" />
       <recent name="C:\xampp\htdocs\pexpertsys\resources\views\user\diagnostic" />
       <recent name="C:\xampp\htdocs\pexpertsys\resources\views\auth\passwords" />
-      <recent name="C:\xampp\htdocs\pexpertsys\public\fonts\font-awesome" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\pexpertsys\resources\views\admin\plant" />
+      <recent name="C:\laragon\www\pexpertsys\app\Http\Controllers\User" />
+      <recent name="C:\laragon\www\pexpertsys\resources\views\user" />
       <recent name="C:\xampp\htdocs\pexpertsys\resources\views\auth\passwords" />
       <recent name="C:\xampp\htdocs\pexpertsys\resources\views\admin\plant" />
-      <recent name="C:\xampp\htdocs\pexpertsys\database\migrations" />
-      <recent name="C:\xampp\htdocs\pexpertsys\public\css" />
-      <recent name="C:\xampp\htdocs\pexpertsys\app\Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -720,7 +622,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Chromium Remote.Debug">
+  <component name="RunManager" selected="Firefox Remote.Debug">
+    <configuration name="Debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229" />
+    <configuration name="Debug" type="FirefoxRemoteDebugType" factoryName="Firefox Remote" />
     <configuration name="AuthTest.test_login_failed" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="AuthTest" file="$PROJECT_DIR$/tests/integration/AuthTest.php" method="test_login_failed" scope="Method" />
     </configuration>
@@ -733,20 +637,8 @@
     <configuration name="AuthTest.test_register_successful" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="AuthTest" file="$PROJECT_DIR$/tests/integration/AuthTest.php" method="test_register_successful" scope="Method" />
     </configuration>
-    <configuration name="Debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" editBeforeRun="true" />
-    <configuration default="false" name="Debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
-      <method />
-    </configuration>
     <configuration name="TestCase" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="TestCase" file="$PROJECT_DIR$/tests/TestCase.php" scope="Class" />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
     </configuration>
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
       <method />
@@ -855,13 +747,22 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Chromium Remote.Debug" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.AuthTest.test_register_successful" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.AuthTest.test_login_failed" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.AuthTest.test_login_successful" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.AuthTest.test_register_fail" />
-      <item index="5" class="java.lang.String" itemvalue="PHPUnit.TestCase" />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Attach to Node.js/Chrome.Debug" />
+      <item index="1" class="java.lang.String" itemvalue="Firefox Remote.Debug" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.AuthTest.test_register_successful" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.AuthTest.test_login_failed" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.AuthTest.test_login_successful" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.AuthTest.test_register_fail" />
+      <item index="6" class="java.lang.String" itemvalue="PHPUnit.TestCase" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -970,7 +871,31 @@
       <workItem from="1505755927438" duration="52000" />
       <workItem from="1505783326107" duration="52719000" />
       <workItem from="1506290517374" duration="74000" />
-      <workItem from="1506378328250" duration="16634000" />
+      <workItem from="1506378328250" duration="25771000" />
+      <workItem from="1506896277898" duration="1822000" />
+      <workItem from="1507313271328" duration="616000" />
+      <workItem from="1507360281830" duration="637000" />
+      <workItem from="1507826932335" duration="1738000" />
+      <workItem from="1508179537192" duration="35000" />
+      <workItem from="1509019304983" duration="1004000" />
+      <workItem from="1509025832427" duration="5064000" />
+      <workItem from="1510177793293" duration="682000" />
+      <workItem from="1510296793851" duration="551000" />
+      <workItem from="1510768042517" duration="1101000" />
+      <workItem from="1510953944094" duration="528000" />
+      <workItem from="1511306884573" duration="12757000" />
+      <workItem from="1511386200841" duration="46092000" />
+      <workItem from="1511793141687" duration="797000" />
+      <workItem from="1511820964229" duration="597000" />
+      <workItem from="1513085720069" duration="1238000" />
+      <workItem from="1513718941871" duration="569000" />
+      <workItem from="1513719559201" duration="111000" />
+      <workItem from="1513719711151" duration="728000" />
+      <workItem from="1513720497737" duration="516000" />
+      <workItem from="1513721054575" duration="288000" />
+      <workItem from="1513721377430" duration="971000" />
+      <workItem from="1513727497240" duration="1218000" />
+      <workItem from="1513729686682" duration="1139000" />
     </task>
     <task id="LOCAL-00001" summary="Readme Actualizado">
       <created>1503862612407</created>
@@ -1028,7 +953,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505983778089</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Actualizado facker y seeder">
+      <created>1506590661913</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1506590661913</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1064,7 +996,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="500788000" />
+    <option name="totallyTimeSpent" value="590724000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1077,28 +1009,54 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22239032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.515885" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262987" sideWeight="0.515885" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24583964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4856661" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.48108926" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45230263" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262987" sideWeight="0.48108926" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14901665" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25969645" sideWeight="0.47352496" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27597404" sideWeight="0.47352496" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22705314" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1989882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.48411497" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.515885" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.48108926" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.062394604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34738618" sideWeight="0.47352496" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28139183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.48411497" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24583964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14901665" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22705314" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1145,395 +1103,370 @@
     <MESSAGE value="Muestra el diagnostico con plaga, descripción y soluciones." />
     <MESSAGE value="Intentando agregar imagen y Llenado de base de datos." />
     <MESSAGE value="Llenado de base de datos (migrations &amp; seeds)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Llenado de base de datos (migrations &amp; seeds)." />
+    <MESSAGE value="Actualizado facker y seeder" />
+    <MESSAGE value="Complete+-" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete+-" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/TypeSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/DiseaseRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/_form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/symptom/_form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/RoleUserSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SearchRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/TruncateTables.php" />
-    <entry file="file://$PROJECT_DIR$/database/seeds/StafSeeder.php" />
-    <entry file="file://$PROJECT_DIR$/database/seeds/DiagnostiSeeder.php" />
-    <entry file="file://$PROJECT_DIR$/database/seeds/RoleSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_25_232104_crear_tabla_sintomas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_25_235009_crear_table_diseases.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_25_235332_create_solutions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_08_04_071854_create_solu_diseas_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Disease.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DiseaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="89" column="26" lean-forward="false" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
-          <folding>
-            <element signature="e#48#57#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/DiseaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        <state relative-caret-position="138">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_08_16_031411_create_plants_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="181">
+          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/diagnostic/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="36" column="62" lean-forward="false" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/PlantRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/respond.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ReportController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/js/graphs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <marker date="1506029589144" expanded="true" signature="670:898" ph="..." />
-            <marker date="1506029589144" expanded="true" signature="699:897" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/UserProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#46#74#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#47#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Plant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/TruncateTablesSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Diagnostic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#31#70#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/plant/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="62" column="49" lean-forward="false" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="291" column="9" lean-forward="false" selection-start-line="291" selection-start-column="9" selection-end-line="291" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/RuleSeeder.php">
+    <entry file="file://$PROJECT_DIR$/vendor/zizaco/entrust/src/Entrust/Traits/EntrustUserTrait.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
-          <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
+          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SymptomSeeder.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="161" column="59" lean-forward="true" selection-start-line="161" selection-start-column="32" selection-end-line="161" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SolutionSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="117" column="11" lean-forward="true" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="481">
+          <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
-          <folding>
-            <element signature="e#48#66#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="117" column="31" lean-forward="false" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/PlantRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="110" column="20" lean-forward="false" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="276">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SolutionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#32#50#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="117" column="34" lean-forward="true" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SoluDiseaSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="351" column="0" lean-forward="false" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/StaffSeeder.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/result.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="19" column="59" lean-forward="true" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-          <folding />
+          <caret line="35" column="65" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/solution/result.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/PlantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Plant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/plant/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="30" column="106" lean-forward="false" selection-start-line="30" selection-start-column="106" selection-end-line="30" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="10334" column="17" lean-forward="false" selection-start-line="10334" selection-start-column="17" selection-end-line="10334" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/plant/result.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="150" lean-forward="false" selection-start-line="8" selection-start-column="150" selection-end-line="8" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/es/messages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PlantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="77" column="76" lean-forward="false" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/plant/_formedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="92" lean-forward="false" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/plant/_form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/_modal.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/plant/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="64" column="59" lean-forward="false" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/solution/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.webapp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/debugbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/layoutuser.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="145" column="30" lean-forward="true" selection-start-line="145" selection-start-column="30" selection-end-line="145" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/diagnostic/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/layoutadmin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="170" column="20" lean-forward="false" selection-start-line="170" selection-start-column="20" selection-end-line="171" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DiseaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="95" column="18" lean-forward="false" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="23">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/RuleSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/SoluDiseaSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/StaffSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/TypeSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="105" column="20" lean-forward="true" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UserSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/TruncateTablesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/plant/boton.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="68" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/diagnostic/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="107" column="6" lean-forward="true" selection-start-line="107" selection-start-column="6" selection-end-line="107" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Diagnostic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        <state relative-caret-position="288">
+          <caret line="195" column="27" lean-forward="true" selection-start-line="195" selection-start-column="27" selection-end-line="195" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/images/13.jpeg" />
+    <entry file="file://$PROJECT_DIR$/storage/app/images/14.jpeg" />
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log" />
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DiagnosticSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="437">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/user/diagnostic/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="23">
+          <caret line="11" column="80" lean-forward="false" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+          <folding>
+            <marker date="1511627131041" expanded="true" signature="856:1084" ph="..." />
+            <marker date="1511627131041" expanded="true" signature="885:1083" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/DiagnosticController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
           <folding />
         </state>
       </provider>

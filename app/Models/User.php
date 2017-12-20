@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Tesis\Models;
 
 use Carbon\Carbon;
@@ -28,6 +29,7 @@ class User extends Authenticatable
     protected $searchable = [
         'columns' => [
             'users.name'  => 10,
+//            'name'  => 10,
             'lastname'    => 10,
             'email'       => 10,
             'states.name' => 7,

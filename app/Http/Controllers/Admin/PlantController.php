@@ -5,6 +5,7 @@ namespace Tesis\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use Tesis\Http\Controllers\Controller;
 use Tesis\Http\Requests\PlantRequest;
+use Tesis\Http\Requests\SearchRequest;
 use Tesis\Models\Plant;
 use Tesis\Traits\HashTrait;
 
@@ -18,7 +19,7 @@ class PlantController extends Controller
      */
     public function create()
     {
-        $plants = Plant::orderBy('number', 'desc')->paginate(10);
+        $plants = Plant::with('user', 'diagnostics')->orderBy('created_at', 'desc')->paginate(10);
         return view('admin.plant.index')->with('plants', $plants);
     }
 
@@ -26,32 +27,10 @@ class PlantController extends Controller
      * @param PlantRequest $request
      * @return \Illuminate\Http\RedirectResponse
      */
-//    private $total = 1;
 
     public function store(PlantRequest $request)
     {
-        $plant = new Plant;
-        $total = 1;
-        $length = $plant->number=$request->number;
-        for($i=0; $i<=$length; $i++){
-            $total = $total + $length[$i];
-            $total->save();
-        }
-
-//        $length = $plant->number=$request->number;
-//        dd($length);
-//        for ($i=1; $i<=$length; $i++) {
-////            $i->save();
-//            dd($length);
-//        }
-//
-        alert('Las plantas fueron registradas correctamente');
-        return redirect('admin/plantas/listar');
-//        $i->save();
-//        $plant->number = $request->number;
-//        Plant::create($request->all());
-//            return redirect('admin/plantas/listar');
-//        var_dump($request->number);
+        //
     }
 
     /**
@@ -63,12 +42,7 @@ class PlantController extends Controller
      */
     public function edit($hash_id)
     {
-        $id = $this->decode($hash_id);
-
-        $plant = Plant::findOrFail($id);
-
-        return view('admin.plant.edit')->with('plant', $plant);
-
+        //
     }
 
     /**
@@ -86,11 +60,23 @@ class PlantController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param $hash_id
      * @return \Illuminate\Http\Response
+     * @internal param int $id
      */
-    public function destroy($id)
+    public function destroy($hash_id)
     {
         //
+    }
+
+    public function search(SearchRequest $request)
+    {
+        if (!$request->has('search')){
+            return redirect()->route('admin::plantas::create');
+        }
+
+        $plants = Plant::search($request->search)->orderBy('created_at', 'id')->with('user')->paginate(20);
+
+        return view('admin.plant.result')->with('plants', $plants);
     }
 }

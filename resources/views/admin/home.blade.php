@@ -76,8 +76,7 @@
         <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
             <div class="small-box bg-olive">
                 <div class="inner">
-                    {{--<h3>{{ $countPlant }}</h3>--}}
-                    <h3>0</h3>
+                    <h3>{{ $countPlant }}</h3>
                     <p>{{ trans('messages.label.plants') }}</p>
                 </div>
                 <div class="icon">

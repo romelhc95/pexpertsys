@@ -8,15 +8,15 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         {{-- Compiled scripts --}}
         <!--link rel="stylesheet" href="{ elixir('css/all.css') }}"-->
-        {{ Html::style('css/all.css') }}
-        {{ Html::style('css/font-awesome.css') }}
+        {{ Html::style('/css/all.css') }}
+        {{ Html::style('/css/font-awesome.css') }}
 
         {{-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --}} {{-- WARNING: Respond.js doesn't work if you view the page via file:// --}}
         <!--[if lt IE 9]>
         <!--script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script-->
-        {{ Html::script('js/html5shiv.min.js') }}
-        {{ Html::script('js/respond.min.js') }}
+        {{ Html::script('/js/html5shiv.min.js') }}
+        {{ Html::script('/js/respond.min.js') }}
         <![endif]-->
     </head>
 
@@ -94,6 +94,11 @@
                                 <i class="fa fa-home"></i> <span>Inicio</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ route('user::plantas::create') }}">
+                                <i class="fa fa-tree"></i> <span>{{ trans('messages.label.plants') }}</span>
+                            </a>
+                        </li>
                         <li class="treeview">
                             <a href="#">
                                 <i class="fa fa-user-md"></i> <span>Diagnósticos</span>
@@ -149,6 +154,8 @@
                 <section class="content">
                     {!! Alert::render() !!}
                     @yield('content')
+                    {{-- Modal --}}
+                    @include('partials._modal')
                 </section>{{-- /.content --}}
             </div>{{-- /.content-wrapper --}}
             <footer class="main-footer">
@@ -163,8 +170,8 @@
         <script src="{ asset('build/js/morris.min.js') }}"></script>
         <script src="{ asset('build/js/graphs.js') }}"></script-->
 
-        {{ Html::script('js/all.js') }}
-        {{ Html::script('build/js/morris.min.js') }}
-        {{ Html::script('build/js/graphs.js') }}
+        {{ Html::script('/js/all.js') }}
+        {{ Html::script('/build/js/morris.min.js') }}
+        {{ Html::script('/build/js/graphs.js') }}
     </body>
 </html>

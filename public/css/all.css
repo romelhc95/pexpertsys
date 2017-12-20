@@ -10326,6 +10326,17 @@ a:focus {
   margin: 0;
   line-height: 1;
 }
+
+.box-header > .fa,
+.box-header > .glyphicon,
+.box-header > .ion,
+.box-header .box-subtitle {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1;
+}
+
 .box-header > .fa,
 .box-header > .glyphicon,
 .box-header > .ion {

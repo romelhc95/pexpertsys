@@ -2,10 +2,11 @@
 
 return [
 
-    'name' => 'Laravel',
+    'name' => 'PExpertSys',
     'env' => env('APP_ENV', 'production'),
-    'debug' => env('APP_DEBUG', false),
-    'url' => env('APP_URL', 'http://localhost'),
+//    'debug' => env('APP_DEBUG', false),
+    'debug' => 'false',
+    'url' => env('APP_URL', 'http://127.0.0.1'),
 //    'timezone' => 'UTC',
     'timezone'  => 'America/Lima',
     'locale' => 'es',
@@ -75,6 +76,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Styde\Html\HtmlServiceProvider::class,
         Vinkla\Hashids\HashidsServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
         /*
          * Application Service Providers...

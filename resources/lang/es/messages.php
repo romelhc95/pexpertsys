@@ -45,11 +45,10 @@ return [
         'states'          => 'Estados',
         'passed'          => 'Paso',
         'plant'         => [
-            'number' => 'Numero de plantas',
+            'codeplant' => 'Numero de plantas',
             'area' => 'Area de ubicación de la planta',
-            'sector' => 'Sector de ubicación de la planta',
-            'list'        => 'Listado de PLantas',
-            'new'         => 'Nuevo Síntoma',
+            'list'        => 'Listado de Plantas',
+            'new'         => 'Nueva Planta',
         ],
         'plants'           => 'Plantas',
         'symptom'         => [
@@ -68,13 +67,13 @@ return [
         ],
         'solutions'        => 'Soluciones',
         'disease'         => [
-            'description' => 'Una breve descripción de la enfermedad',
-            'list'        => 'Listado de Enfermedades',
-            'name'        => 'Nombre de la enfermedad',
-            'new'         => 'Nueva Enfermedad',
+            'description' => 'Una breve descripción de la plaga ó enfermedad',
+            'list'        => 'Listado de Plagas ó Enfermedades',
+            'name'        => 'Nombre de la Plaga ó enfermedad',
+            'new'         => 'Nueva Plaga ó Enfermedad',
             'select'         => 'Seleccionar Plaga ó Enfermedad',
         ],
-        'top_two'         => 'Las dos primeras enfermedades más diagnósticadas',
+        'top_two'         => 'Las dos primeras plagas ó enfermedades más diagnósticadas',
     ],
 
     'login'    => [
@@ -88,6 +87,7 @@ return [
     'register' => [
         'submit'     => 'Registrarse',
         'successful' => 'Su cuenta ha sido creada con éxito',
+        'found'      => 'registros encontrados',
     ],
 
     'state'    => [

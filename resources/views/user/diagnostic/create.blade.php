@@ -43,6 +43,11 @@
                 @endif
                 <h4>Elija uno de los siguientes síntomas a continuación</h4>
                 {!! Form::open(['route' => 'user::diagnosticos::analyze']) !!}
+                    {{--@if(empty($sintomas))--}}
+                    <div class="form-group">
+                        {!! Form::select('plant', $plants, null, ['label' => 'Numero de Planta', 'class' => 'select2', 'data-width' => '100%']) !!}
+                    </div>
+                    {{--@endif--}}
                     <div class="form-group">
                         {!! Form::select('sintoma', $sintomas, null, ['class' => 'select2', 'data-width' => '100%']) !!}
                     </div>
