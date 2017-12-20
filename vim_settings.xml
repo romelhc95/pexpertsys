@@ -6,9 +6,22 @@
       <file name="/Dummy.txt" timestamp="1513735777960">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="C:/laragon/www/pexpertsys/.gitignore" timestamp="1513738043049" />
+      <file name="C:/laragon/www/pexpertsys/.env" timestamp="1513738076542">
+        <mark key="[" line="2" column="10" />
+        <mark key="]" line="2" column="15" />
+        <mark key="." line="2" column="15" />
+      </file>
     </filemarks>
     <jumps />
-    <registers />
+    <registers>
+      <register name="&quot;" type="4">
+        <text>production</text>
+      </register>
+      <register name="-" type="4">
+        <text>production</text>
+      </register>
+    </registers>
     <search>
       <last-dir>0</last-dir>
       <show-last>false</show-last>
@@ -22,6 +35,9 @@
     <shortcut-conflicts>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed S</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
