@@ -3,23 +3,29 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1513735777960">
+      <file name="/Dummy.txt" timestamp="1513740295277">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="C:/laragon/www/pexpertsys/.gitignore" timestamp="1513738043049" />
-      <file name="C:/laragon/www/pexpertsys/.env" timestamp="1513738076542">
-        <mark key="[" line="2" column="10" />
-        <mark key="]" line="2" column="15" />
-        <mark key="." line="2" column="15" />
+      <file name="C:/laragon/www/pexpertsys/.env" timestamp="1513741542947">
+        <mark key="[" line="7" column="14" />
+        <mark key="]" line="7" column="11" />
+        <mark key="." line="7" column="11" />
+        <mark key="^" line="7" column="11" />
+      </file>
+      <file name="C:/laragon/www/pexpertsys/composer.json" timestamp="1513740191804">
+        <mark key="[" line="53" column="13" />
+        <mark key="]" line="49" column="9" />
+        <mark key="." line="49" column="9" />
       </file>
     </filemarks>
     <jumps />
     <registers>
       <register name="&quot;" type="4">
-        <text>production</text>
+        <text>mysql</text>
       </register>
       <register name="-" type="4">
-        <text>production</text>
+        <text>mysql</text>
       </register>
     </registers>
     <search>
@@ -38,6 +44,9 @@
       </shortcut-conflict>
       <shortcut-conflict owner="ide">
         <text>ctrl pressed S</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed C</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
