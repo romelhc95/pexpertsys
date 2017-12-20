@@ -62,11 +62,7 @@
             "php -r \"copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "composer self-update",
-            "composer install --no-interaction",
-            "mysql -e 'create database pexpertsys_db'",
-            "php artisan key:generate",
-            "php artisan migrate --force"
+            "php artisan key:generate"
         ]
     },
     "config": {
